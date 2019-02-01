@@ -1,6 +1,0 @@
-plugin:
-    name: 'me.myplugin::lang.plugin.name'
-    description: 'me.myplugin::lang.plugin.description'
-    author: me
-    icon: oc-icon-adjust
-    homepage: ''
