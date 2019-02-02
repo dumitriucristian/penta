@@ -1,0 +1,34 @@
+.banner{
+   min-height:750px;
+   background-image:url("../images/freelancer_hero.jpg");
+   position:absolute;
+   top:0;
+   width:100%;
+}
+#mainmenu{
+   position:relative;
+   z-index: 4;
+   padding: 16px;
+   font-size: 2.5em;
+   color:white;
+}
+#mainmenu .nav-item a{
+   color:white;
+}
+#logo {
+   background-image:url("../images/logo.pentalog-company-white.svg");
+   height:100px;
+   width:100px;
+   color:#f8bd32;
+   display:block;
+   text-indent:-9999px;
+   background-size:100px 100px;
+}
+
+#mainmenu .nav-item a:hover{
+   background-color:unset;
+   border-top:solid 5px #f8bd32;
+   position:relative;
+   top:-5px;
+   color: #f8bd32;
+}
