@@ -2,10 +2,25 @@
   margin:0;
   padding:0;
 }
+#wrapper{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+
+}
+content{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    flex: 1;
+
+}
 header{
     display:flex;
-    width:80%;
-    margin:0 auto;
+
 }
 
 #right-nav{
@@ -19,5 +34,15 @@ header{
     flex:2;
 }
 #left-nav  nav ul{
+    display:flex;
+}
+
+footer{
+    background-color: black;
+    color: #ffc53e;
+}
+
+#footer-three{
+    height:50px;
     display:flex;
 }

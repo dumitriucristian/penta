@@ -11,19 +11,20 @@ default = 0
     <link href="{{ [  'assets/css/styles.css']|theme }}" rel="stylesheet">
 </head>
 <body>
-<header>
+<div id="wrapper">
+    <header>
 
 
-       <div id="left-nav">
-           <img src="" alt="Skillvalue logo" />
-           <nav>
-               <ul>
-                   <li> <a href="#">One</a></li>
-                   <li> <a href="#">Two</a></li>
-                   <li> <a href="#">Three</a></li>
-               </ul>
-           </nav>
-       </div>
+        <div id="left-nav">
+            <img src="" alt="Skillvalue logo" />
+            <nav>
+                <ul>
+                    <li> <a href="#">One</a></li>
+                    <li> <a href="#">Two</a></li>
+                    <li> <a href="#">Three</a></li>
+                </ul>
+            </nav>
+        </div>
         <div id="right-nav">
             <input type="button" value="Sign In">
             <span>or</span>
@@ -32,7 +33,21 @@ default = 0
         </div>
 
 
-</header>
-<content>{% page %}</content>
-<footer></footer>
+    </header>
+    <content>{% page %}</content>
+    <footer>
+        <div id="footer-three">
+            <div id="left-footer"><p>Copyright nu stiu cum</p></div>
+            <div id="right-footer">
+                <a href="">General terms |</a>
+                <a href="">Legal statement</a>
+                <a href="">Privacy policy</a>
+                <a href=""> Cookies</a>
+            </div>
+
+        </div>
+
+    </footer>
+</div>
+
 </body>
