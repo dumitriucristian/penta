@@ -1,0 +1,38 @@
+description = "default"
+
+[staticPage]
+useContent = 1
+default = 0
+==
+<!DOCTYPE html>
+<head>
+    <title>{{ this.page.title }}</title>
+    <meta name="description" content="{{this.page.meta_description}}"/>
+    <link href="{{ [  'assets/css/styles.css']|theme }}" rel="stylesheet">
+</head>
+<body>
+<header>
+
+
+       <div id="left-nav">
+           <img src="" alt="Skillvalue logo" />
+           <nav>
+               <ul>
+                   <li> <a href="#">One</a></li>
+                   <li> <a href="#">Two</a></li>
+                   <li> <a href="#">Three</a></li>
+               </ul>
+           </nav>
+       </div>
+        <div id="right-nav">
+            <input type="button" value="Sign In">
+            <span>or</span>
+            <input type="button" value="Sign Up">
+            <img src="" alt="search">
+        </div>
+
+
+</header>
+<content>{% page %}</content>
+<footer></footer>
+</body>

@@ -1,0 +1,23 @@
+*{
+  margin:0;
+  padding:0;
+}
+header{
+    display:flex;
+    width:80%;
+    margin:0 auto;
+}
+
+#right-nav{
+    display:flex;
+    margin-left:auto;
+    flex:1;
+}
+
+#left-nav{
+    display:flex;
+    flex:2;
+}
+#left-nav  nav ul{
+    display:flex;
+}
