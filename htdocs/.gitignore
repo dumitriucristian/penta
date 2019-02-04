@@ -3,6 +3,7 @@
 composer.phar
 .DS_Store
 .idea
+.idea/
 .env
 .env.*.php
 .env.php
