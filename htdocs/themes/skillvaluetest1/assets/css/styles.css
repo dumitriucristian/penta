@@ -1,6 +1,7 @@
 *{
   margin:0;
   padding:0;
+
 }
 #wrapper{
     width: 100%;
@@ -24,13 +25,24 @@ header{
     width: 80%;
     margin-left: 10%;
     display:flex;
+    align-items:center;
 
 }
-
+#left-nav{
+    margin-left:5%
+}
+#left-nav ul li a{
+    padding:25px;
+    color:white;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight:bold;
+}
 #right-nav{
     display:flex;
     margin-left:auto;
     flex:1;
+    justify-content: flex-end;
 }
 
 #left-nav{
@@ -88,6 +100,21 @@ footer{
     padding-bottom: 20px;
 }
 
-#footer-one .col{
-    flex:1;
+
+#top-banner{
+    width: 100%;
+    min-height:500px;
+    background-image:url("../images/freelancer_hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    background-image: url("../images/logo.pentalog-company-white.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:145px;
+    height:90px;
+    text-indent: -9999px;
+
 }
