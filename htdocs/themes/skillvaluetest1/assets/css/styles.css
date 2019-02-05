@@ -1,3 +1,4 @@
+/* GENERAL */
 *{
   margin:0;
   padding:0;
@@ -8,10 +9,9 @@ html {
     font-size:14px;
 }
 
-#top-banner{
-    display:flex;
-    flex-direction:column;
-}
+/* END GENERAL */
+
+
 
 #wrapper{
     width: 100%;
@@ -20,7 +20,7 @@ html {
     flex-direction: column;
     position: absolute;
 }
-
+/* CONTENT */
 content{
     display: flex;
     flex-direction: column;
@@ -32,6 +32,9 @@ content{
 
 }
 
+/* END CONTENT */
+
+/* HEADER */
 header{
     width: 80%;
     margin-left: 10%;
@@ -40,111 +43,6 @@ header{
     flex-wrap:wrap;
     min-width:150px;
 
-}
-#left-nav{
-    margin-left:5%
-}
-#left-nav nav ul li{
-    list-style:none;
-}
-#left-nav ul li a{
-    padding:25px;
-    color:white;
-    text-decoration:none;
-    text-transform: uppercase;
-    font-weight:bold;
-    min-width:50px;
-    padding-top: 39px;
-}
-#right-nav{
-    display:flex;
-    margin-left:auto;
-    flex:1;
-    justify-content: flex-end;
-}
-
-#left-nav{
-    display:flex;
-    flex:2;
-}
-#left-nav  nav ul{
-    display:flex;
-}
-
-#left-nav  nav ul li a:hover{
-    border-top: solid 4px #ffc53e;
-}
-
-footer{
-    background-color: black;
-    color: white;
-    border-top: solid 4px #ffc53e;
-
-}
-
-footer li{
-
-
-    list-style: none;
-    color: #929292;
-    font-size: 1.1em;
-    padding: 0.2em;
-
-}
-footer li a{
-    list-style: none;
-    text-decoration: none;
-    color: #929292;
-
-}
-#footer-three{
-    height:50px;
-    display:flex;
-    width:80%;
-    margin-left:10%;
-    align-items:center;
-
-}
-#left-footer{
-    display:flex;
-    flex:1;
-    color: #ffff;
-}
-
-#right-footer{
-    display:flex;
-    flex:1;
-    color: #ffc53e;
-    justify-content:flex-end;
-}
-
-#footer-two{
-    background-color:#171414;
-    display:flex;
-    padding-left:10%;
-    padding-right:10%;
-    justify-content: space-around;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-#footer-one{
-    background-color:#171414;
-    display:flex;
-    padding-left:10%;
-    padding-right:10%;
-    justify-content:space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-
-#top-banner{
-    width: 100%;
-    min-height:500px;
-    background-image:url("../images/freelancer_hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .logo{
@@ -159,6 +57,46 @@ footer li a{
 
 }
 
+/* END HEADER */
+
+/* MAIN MENU */
+#left-nav{
+    margin-left:5%;
+    display:flex;
+    flex:2;
+}
+
+#left-nav nav ul li{
+    list-style:none;
+}
+#left-nav ul li a{
+    padding: 25px;
+    color:white;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight:bold;
+    min-width:50px;
+    padding-top: 39px;
+
+}
+#right-nav{
+    display:flex;
+    margin-left:auto;
+    flex:1;
+    justify-content: flex-end;
+}
+
+
+#left-nav  nav ul{
+    display:flex;
+}
+
+#left-nav  nav ul li a:hover{
+    border-top: solid 4px #ffc53e;
+}
+
+
+
 
 #left-nav ul{
     display: flex;
@@ -166,18 +104,22 @@ footer li a{
     flex-wrap: wrap;
 
 }
-/*banner styles*/
-.banner-content h2{
-    font-size: 1.8em;
-    padding: 0.6em 0px;
+/* MAIN BANNER */
+
+#top-banner{
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    min-height:500px;
+    background-image:url("../images/freelancer_hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.banner-content p{
-    padding: 0.5em 0px;
-}
 
 
 .banner-content{
+
     color: white;
     display: flex;
     flex-direction: column;
@@ -192,6 +134,16 @@ footer li a{
 
 }
 
+.banner-content h2{
+    font-size: 1.8em;
+    padding: 0.6em 0;
+}
+
+.banner-content p{
+    padding: 0.5em 0;
+}
+
+
 .banner-content input[type="button"]{
     margin: 5px;
     padding: 5px;
@@ -200,46 +152,116 @@ footer li a{
     cursor: pointer;
     border-radius: 4px;
 }
+/* END BANNER */
 
-.col-left, .col-right{
-    flex: 1;
-    padding:5px  0;
-    margin-left:25px;
-}
-#footer-two .col-left, #footer-two .col-right{
-    display:flex;
-    justify-content: space-between;
-    align-items:baseline;
-}
+/*FOOTER */
 
-#footer-two h4{
+    footer{
+        background-color: black;
+        color: white;
+        border-top: solid 4px #ffc53e;
 
-    font-size:0.9em;
-    text-transform:uppercase;
-    padding:5px;
+    }
 
+    footer a{
+        color: #ffc53e;
+        text-decoration: none;
 
-}
+    }
 
-#footer-two ul li a{
-    font-size:0.8em;
-}
+    footer li{
 
 
-#footer-two .logo{
-    padding: 0 15px 0 15px;
-    margin-top: 0;
-    width: 118px;
-    height: 96px;
-    min-width: 64px;
-}
+        list-style: none;
+        color: #929292;
+        font-size: 1.1em;
+        padding: 0.2em;
 
-footer a{
-    color: #ffc53e;
-    text-decoration: none;
+    }
+    footer li a{
+        list-style: none;
+        text-decoration: none;
+        color: #929292;
 
-}
+    }
 
-#footer-three #right-footer{
-    justify-content: flex-start;
-}
+    #left-footer{
+        display:flex;
+        flex:1;
+        color: #ffff;
+    }
+
+    #right-footer{
+        display:flex;
+        flex:1;
+        color: #ffc53e;
+        justify-content:flex-end;
+    }
+
+    .col-left, .col-right{
+        flex: 1;
+        padding: 5px 40px; margin-left:25px;
+    }
+
+    /* FOOTER ONE*/
+
+    #footer-one{
+        background-color:#171414;
+        display:flex;
+        padding: 20px 10%;
+        justify-content:space-between;
+
+    }
+    /* FOOTER TWO*/
+
+
+
+    #footer-two{
+        background-color:#171414;
+        display:flex;
+        padding:30px 10%;
+        justify-content: space-around;
+
+    }
+
+    #footer-two h4{
+        font-size:0.9em;
+        text-transform:uppercase;
+        padding:5px;
+    }
+
+    #footer-two ul li a{
+        font-size:0.8em;
+    }
+
+
+    #footer-two .logo{
+        padding: 0 15px 0 15px;
+        margin-top: 0;
+        width: 118px;
+        height: 96px;
+        min-width: 64px;
+    }
+
+    #footer-two .col-left, #footer-two .col-right{
+        display:flex;
+        justify-content: space-between;
+        align-items:baseline;
+
+    }
+
+    /* FOOTER THREE*/
+
+    #footer-three{
+        height:50px;
+        display:flex;
+        width:80%;
+        margin-left:10%;
+        align-items:center;
+
+    }
+
+
+    #footer-three #right-footer{
+        justify-content: flex-start;
+    }
