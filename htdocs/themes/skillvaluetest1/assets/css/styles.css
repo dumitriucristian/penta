@@ -1,188 +1,169 @@
-/* GENERAL */
-*{
-  margin:0;
-  padding:0;
-  font-family: 'Quicksand', sans-serif;
-}
+    /* GENERAL */
+    *{
+      margin:0;
+      padding:0;
+      font-family: 'Quicksand', sans-serif;
+    }
 
-html {
-    font-size:14px;
-}
+    html {
+        font-size:14px;
+    }
 
-/* END GENERAL */
+    #wrapper{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        position: absolute;
+    }
+    /* END GENERAL */
 
+    /* CONTENT */
 
+    content{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        flex: 1;
+        width: 80%;
+        margin-left: 10%;
+        min-height: 150px;
+    }
+    /* END CONTENT */
 
-#wrapper{
-    width: 100%;
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    position: absolute;
-}
-/* CONTENT */
-content{
-    display: flex;
-    flex-direction: column;
-    color: black;
-    flex: 1;
-    width: 80%;
-    margin-left: 10%;
-    min-height: 150px;
+    /* HEADER */
+    header{
+        width: 80%;
+        margin-left: 10%;
+        display:flex;
+        align-items:center;
+        flex-wrap:wrap;
+        min-width:150px;
+    }
 
-}
+    .logo{
+        background-image: url("../images/logo.pentalog-company-white.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width:145px;
+        height:90px;
+        text-indent: -9999px;
+        min-width:100px;
+        margin-top: 15px;
+    }
+    /* END HEADER */
 
-/* END CONTENT */
+    /* MAIN MENU */
+    #left-nav{
+        margin-left:5%;
+        display:flex;
+        flex:2;
+    }
 
-/* HEADER */
-header{
-    width: 80%;
-    margin-left: 10%;
-    display:flex;
-    align-items:center;
-    flex-wrap:wrap;
-    min-width:150px;
+    #left-nav nav ul li{
+        list-style:none;
+    }
 
-}
+    #left-nav ul li a{
+        padding: 25px;
+        padding-top: 39px;
+        color:white;
+        text-decoration:none;
+        text-transform: uppercase;
+        font-weight:bold;
+        min-width:50px;
+    }
 
-.logo{
-    background-image: url("../images/logo.pentalog-company-white.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width:145px;
-    height:90px;
-    text-indent: -9999px;
-    min-width:100px;
-    margin-top: 15px;
+    #right-nav{
+        display:flex;
+        margin-left:auto;
+        flex:1;
+        justify-content: flex-end;
+    }
 
-}
+    #left-nav  nav ul{
+        display:flex;
+    }
 
-/* END HEADER */
+    #left-nav  nav ul li a:hover{
+        border-top: solid 4px #ffc53e;
+    }
 
-/* MAIN MENU */
-#left-nav{
-    margin-left:5%;
-    display:flex;
-    flex:2;
-}
+    #left-nav ul{
+        display: flex;
+        min-width: 25px;
+        flex-wrap: wrap;
 
-#left-nav nav ul li{
-    list-style:none;
-}
-#left-nav ul li a{
-    padding: 25px;
-    color:white;
-    text-decoration:none;
-    text-transform: uppercase;
-    font-weight:bold;
-    min-width:50px;
-    padding-top: 39px;
+    }
+    /* MAIN BANNER */
 
-}
-#right-nav{
-    display:flex;
-    margin-left:auto;
-    flex:1;
-    justify-content: flex-end;
-}
+    #top-banner{
+        display:flex;
+        flex-direction:column;
+        width: 100%;
+        min-height:500px;
+        background-image:url("../images/freelancer_hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
+    .banner-content{
 
-#left-nav  nav ul{
-    display:flex;
-}
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        max-width: 850px;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.3em;
+        padding: 20px 20px;
+    }
 
-#left-nav  nav ul li a:hover{
-    border-top: solid 4px #ffc53e;
-}
+    .banner-content h2{
+        font-size: 1.8em;
+        padding: 0.6em 0;
+    }
 
+    .banner-content p{
+        padding: 0.5em 0;
+    }
 
+    .banner-content input[type="button"]{
+        margin: 5px;
+        padding: 5px;
+        width: 15em;
+        cursor: pointer;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    /* END BANNER */
 
-
-#left-nav ul{
-    display: flex;
-    min-width: 25px;
-    flex-wrap: wrap;
-
-}
-/* MAIN BANNER */
-
-#top-banner{
-    display:flex;
-    flex-direction:column;
-    width: 100%;
-    min-height:500px;
-    background-image:url("../images/freelancer_hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-.banner-content{
-
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    max-width: 850px;
-    text-align: center;
-    margin-top: 50px;
-    font-size: 1.3em;
-    padding: 20px 20px;
-
-}
-
-.banner-content h2{
-    font-size: 1.8em;
-    padding: 0.6em 0;
-}
-
-.banner-content p{
-    padding: 0.5em 0;
-}
-
-
-.banner-content input[type="button"]{
-    margin: 5px;
-    padding: 5px;
-    width: 15em;
-    cursor: pointer;
-    cursor: pointer;
-    border-radius: 4px;
-}
-/* END BANNER */
-
-/*FOOTER */
-
+    /*FOOTER */
     footer{
         background-color: black;
         color: white;
         border-top: solid 4px #ffc53e;
-
     }
 
     footer a{
         color: #ffc53e;
         text-decoration: none;
-
     }
 
     footer li{
-
-
         list-style: none;
         color: #929292;
         font-size: 1.1em;
         padding: 0.2em;
-
     }
+
     footer li a{
         list-style: none;
         text-decoration: none;
         color: #929292;
-
     }
 
     #left-footer{
@@ -204,18 +185,14 @@ header{
     }
 
     /* FOOTER ONE*/
-
     #footer-one{
         background-color:#171414;
         display:flex;
         padding: 20px 10%;
         justify-content:space-between;
-
     }
+
     /* FOOTER TWO*/
-
-
-
     #footer-two{
         background-color:#171414;
         display:flex;
@@ -230,11 +207,6 @@ header{
         padding:5px;
     }
 
-    #footer-two ul li a{
-        font-size:0.8em;
-    }
-
-
     #footer-two .logo{
         padding: 0 15px 0 15px;
         margin-top: 0;
@@ -247,20 +219,16 @@ header{
         display:flex;
         justify-content: space-between;
         align-items:baseline;
-
     }
 
     /* FOOTER THREE*/
-
     #footer-three{
         height:50px;
         display:flex;
         width:80%;
         margin-left:10%;
         align-items:center;
-
     }
-
 
     #footer-three #right-footer{
         justify-content: flex-start;
