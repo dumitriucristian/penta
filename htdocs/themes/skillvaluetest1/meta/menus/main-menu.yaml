@@ -1,0 +1,13 @@
+name: main-menu
+items:
+    -
+        title: freeelance
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: freelancer
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

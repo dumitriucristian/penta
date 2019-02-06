@@ -14,7 +14,7 @@
         width: 100%;
         height: 100%;
         flex-direction: column;
-        position: absolute;
+
     }
     /* END GENERAL */
 
@@ -45,7 +45,6 @@
         background-image: url("../images/logo.pentalog-company-white.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        width:145px;
         height:90px;
         text-indent: -9999px;
         min-width:100px;
@@ -75,6 +74,7 @@
     }
 
     #right-nav{
+        color:#ffc53e;
         display:flex;
         margin-left:auto;
         flex:1;
@@ -108,18 +108,15 @@
     }
 
     .banner-content{
-
         color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         align-self: center;
-        max-width: 850px;
         text-align: center;
-        margin-top: 50px;
         font-size: 1.3em;
-        padding: 20px 20px;
+        width: 65%;
     }
 
     .banner-content h2{
@@ -131,14 +128,52 @@
         padding: 0.5em 0;
     }
 
-    .banner-content input[type="button"]{
+     input[type="button"],  input[type="submit"]{
         margin: 5px;
-        padding: 5px;
-        width: 15em;
-        cursor: pointer;
+        padding: 3px;
         cursor: pointer;
         border-radius: 4px;
+        color: black;
+        font-weight: bold;
+        background-color: #ffc53e;
+        border-color: #ffc53e;
+        text-transform: uppercase;
+        font-size: 0.8em;
+         min-height:30px;
     }
+
+     input[type="submit"]{
+         border-radius: 0 4px 4px 0;
+     }
+     input[type="text"]{
+         padding: 6px;
+         border-radius: 4px 0 0 4px;
+         border-color: #c7c6c6;
+         border: solid 1px gray;
+         border-right-color: none;
+         margin: 0;
+         position: relative;
+         left: 10px;
+         background-color: black;
+         color: #fffdfd;
+     }
+     input[type="button"]:hover{
+        background-color: black;
+        color: #ffc53e;
+        border: 1px solid;
+    }
+
+    .button-small{
+        width: 5em;
+    }
+
+    .button-large{
+        width: 15em;
+    }
+
+
+
+
     /* END BANNER */
 
     /*FOOTER */
@@ -176,7 +211,7 @@
         display:flex;
         flex:1;
         color: #ffc53e;
-        justify-content:flex-end;
+        justify-content: space-evenly;
     }
 
     .col-left, .col-right{
@@ -220,7 +255,9 @@
         justify-content: space-between;
         align-items:baseline;
     }
-
+    #footer-two .col-right .col{
+        max-width:200px;
+    }
     /* FOOTER THREE*/
     #footer-three{
         height:50px;
@@ -228,8 +265,40 @@
         width:80%;
         margin-left:10%;
         align-items:center;
+
     }
 
-    #footer-three #right-footer{
+    #footer-three{
         justify-content: flex-start;
+        font-size: 0.9em;
+    }
+    #footer-three a{
+        padding-left: 27px;
+        padding-right: 27px;
+        border-right: solid 1px;
+        font-size: 0.9em;
+
+    }
+
+    #footer-three a:last-child{
+        border-right: none;
+    }
+    @media all and (max-width: 1200px){
+        header{
+            display:flex;
+            flex-direction:column;
+            flex-wrap:wrap;
+
+        }
+        #right-nav{
+            margin-left:unset;
+        }
+        #left-nav{
+            margin-left:unset;
+        }
+        #left-nav nav ul{
+            flex-direction:column;
+            flex:1;
+
+        }
     }
