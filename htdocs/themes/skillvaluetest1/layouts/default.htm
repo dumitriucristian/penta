@@ -13,117 +13,111 @@ default = 0
     <meta name="description" content="{{this.page.meta_description}}"/>
     <link href="{{ [  'assets/css/styles.css']|theme }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
 </head>
 <body>
-<div id="wrapper">
-    <div id="top-banner">
-        <header>
-            <div class="logo">Skillvalue</div>
-            <div id="left-nav">
-                <nav>
-                    <ul>
-                        <li> <a href="#">Freelancer</a></li>
-                        <li> <a href="#">Assessments</a></li>
-                        <li> <a href="#">Recruitment</a></li>
-                    </ul>
-                </nav>
+    <div id="wrapper">
+        <div id="top-banner">
+            <header>
+                <div class="logo">Skillvalue</div>
+                <div id="left-nav">
+                    <nav>
+                        <ul>
+                            <li> <a href="#">Freelancer</a></li>
+                            <li> <a href="#">Assessments</a></li>
+                            <li> <a href="#">Recruitment</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="right-nav">
+                    <form>
+                        <input type="button"  class="button-small" value="Sign In">
+                        <span>or</span>
+                        <input type="button" class="button-small" value="Sign Up">
+                        <a href="#" class="search" ><i class="fas fa-search"></i></a>
+                    </form>
+                </div>
+            </header>
+            <div class="banner-content">
+                <h2>Assess your tech candidates using SkillValue</h2>
+                <p>We are a full-stack service solution: sourcing, recruitment, tech assessment and hackathons, through which you can assess, attract and engage your community</p>
+                <input type="button" class="button-large" value="start your free trial" />
+                <input type="button" class="button-large"  value="new start-up offer" />
             </div>
-            <div id="right-nav">
-                <form>
-                    <input type="button"  class="button-small" value="Sign In">
-                    <span>or</span>
-                    <input type="button" class="button-small" value="Sign Up">
-                    <img src="" alt="search">
-                </form>
-
-
-            </div>
-
-
-        </header>
-        <div class="banner-content">
-            <h2>Assess your tech candidates using SkillValue</h2>
-            <p>We are a full-stack service solution: sourcing, recruitment, tech assessment and hackathons, through which you can assess, attract and engage your community</p>
-            <input type="button" class="button-large" value="start your free trial" />
-            <input type="button" class="button-large"  value="new start-up offer" />
         </div>
+
+        <content>{% page %}</content>
+        <footer>
+            <div id="footer-one">
+                <div class="col-left">
+                    <h2>LET'S KEEP <a href="">IN TOUCH</a>!</h2>
+                    <p>
+                        SkillValue is your full-stack assessment solution that goes the extra mile <a href="">with you</a>.
+                    </p>
+                </div>
+                <div class="col-right">
+                    <div id="subscribe">
+                        <input type="text" placeholder="something">
+                        <input type="submit" value="submit">
+                    </div>
+                    <p><input type="checkbox"><label>This is a text for checkbox</label></p>
+                </div>
+            </div>
+            <div id="footer-two">
+                <div class="col-left">
+                    <div class="col">
+                        <div class="logo">Skillvalue</div>
+                        <h4>More About US    <a href="#"> Here</a>!</h4>
+                    </div>
+                    <div class="col">
+                        <h4>Our Main Services</h4>
+                        <ul>
+                            <li><a href="">Freelancers</a></li>
+                            <li><a href="">Assessments</a></li>
+                            <li><a href="">Recruitment</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>Other Services</h4>
+                        <ul>
+                            <li><a href="">Assess your knowledge</a></li>
+                            <li><a href="">Assess your skills</a></li>
+                            <li><a href="">Compete with others</a></li>
+                            <li><a href="">Find your next job</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="col">
+                        <h4>Contact</h4>
+                        <ul class="contact">
+                            <li><i class="fas fa-map-marker-alt"></i><span>153, rue Saint-Martin 75003, Paris, FRANCE</span></li>
+                            <li><i class="fas fa-phone"></i><span>+22 (0) 2 46024012 2</span></li>
+                            <li><i class="far fa-envelope"></i><span>contact@skillvalue.com</span></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h4>FOLLOW US ON</h4>
+                        <ul class="social">
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-three">
+                <div id="left-footer"><p>@Copyright 2019 SkillValue. All rights reserved</p></div>
+                <div id="right-footer">
+                     <a href=""> General terms and conditions</a>
+                     <a href=""> Legal statement </a>
+                     <a href=""> Privacy policy </a>
+                     <a href=""> Cookies Charter</a>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <content>{% page %}</content>
-    <footer>
-        <div id="footer-one">
-            <div class="col-left">
-                <h2>LET'S KEEP <a href="">IN TOUCH</a>!</h2>
-                <p>
-                    SkillValue is your full-stack assessment solution that goes the extra mile <a href="">with you</a>.
-                </p>
-            </div>
-            <div class="col-right">
-                <input type="text" placeholder="something">
-                <input type="submit" value="submit">
-                <p><input type="checkbox"><label>This is a text for checkbox</label></p>
-            </div>
-        </div>
-        <div id="footer-two">
-            <div class="col-left">
-                <div class="col">
-                    <div class="logo">Skillvalue</div>
-                    <h4>More About US    <a href="#"> Here</a>!</h4>
-                </div>
-
-
-                <div class="col">
-                    <h4>Our Main Services</h4>
-                    <ul>
-                        <li><a href="">Freelancers</a></li>
-                        <li><a href="">Assessments</a></li>
-                        <li><a href="">Recruitment</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="col">
-                    <h4>Other Services</h4>
-                    <ul>
-                        <li><a href="">Assess your knowledge</a></li>
-                        <li><a href="">Assess your skills</a></li>
-                        <li><a href="">Compete with others</a></li>
-                        <li><a href="">Find your next job</a></li>
-                    </ul>
-
-                </div>
-            </div>
-            <div class="col-right">
-                <div class="col">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>153, rue Saint-Marting75003, Paris, FRANCE</li>
-                        <li>+22 (0) 2 46024012 2</li>
-                        <li>contact@skillvalue.com</li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h4>FOLLOW US ON</h4>
-                    <ul>
-                        <li>link 1</li>
-                        <li>link 2</li>
-                        <li>link 3</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id="footer-three">
-            <div id="left-footer"><p>Copyright nu stiu cum</p></div>
-            <div id="right-footer">
-                 <a href=""> General terms </a>
-                 <a href=""> Legal statement </a>
-                 <a href=""> Privacy policy </a>
-                 <a href=""> Cookies </a>
-            </div>
-
-        </div>
-
-    </footer>
-</div>
-
 </body>
+</html>
