@@ -3,6 +3,16 @@ description = "default"
 [staticPage]
 useContent = 1
 default = 0
+
+[session]
+security = "all"
+
+[account]
+paramCode = "code"
+forceSecure = 0
+
+[resetPassword]
+paramCode = "code"
 ==
 <!DOCTYPE html>
 <head>
@@ -47,7 +57,7 @@ default = 0
                 <input type="button" class="button-large"  value="new start-up offer" />
             </div>
         </div>
-
+{% component 'account' %}{% component 'resetPassword' %}
         <content>{% page %}</content>
         <footer>
             <div id="footer-one">

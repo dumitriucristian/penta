@@ -232,11 +232,11 @@
     }
     .col-right{
         margin-left: 10%;
-        max-width: 40em;
     }
+
     .col-left, .col-right{
         flex: 1;
-        max-width: 40em;
+        max-width: 36em;
     }
 
     /* FOOTER ONE*/
@@ -258,6 +258,7 @@
         justify-content: space-around;
 
     }
+
     .col-left{
         max-width: 45em;
     }
@@ -336,11 +337,9 @@
        padding: 0.5em;
    }
 
-
     .social{
         display: flex;
         padding: 2em 0px;
-
     }
 
     @media all and (max-width: 1200px){
@@ -361,6 +360,5 @@
         #left-nav nav ul{
             flex-direction:column;
             flex:1;
-
         }
     }

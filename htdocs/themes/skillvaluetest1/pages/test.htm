@@ -1,0 +1,16 @@
+title = "test"
+url = "/test"
+description = "test"
+is_hidden = 0
+
+[account]
+paramCode = "code"
+forceSecure = 0
+
+[session]
+security = "all"
+
+[resetPassword]
+paramCode = "code"
+==
+{% component 'account' %}{% component 'session' %}{% component 'resetPassword' %}
