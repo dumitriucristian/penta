@@ -133,7 +133,8 @@
     }
 
     .banner-content p{
-        padding: 1.5em 3.5em;
+        max-width:30em;
+        padding: 1.5em 8.5em;
     }
 
      input[type="button"],  input[type="submit"]{
@@ -172,7 +173,7 @@
     }
 
     .button-small{
-        width: 5em;
+        width: 7em;
     }
     #subscribe{
         display:flex;
@@ -317,11 +318,16 @@
     }
 
     .fab {
-        background-color: #ffc53e;
-        border-radius: 50% 50% 50% 51%;
+        border-radius: 100%;
         font-size: 1.5em;
-        color: black;
-        padding:0.5em;
+        height: 21px;
+        margin: 5px;
+        text-align: center;
+        width: 21px;
+        background-color:#ffc53e;
+        padding: 0.4em;
+        color:black;
+
     }
 
     ul.contact li{
@@ -339,10 +345,10 @@
 
     .social{
         display: flex;
-        padding: 2em 0px;
+
     }
 
-    @media all and (max-width: 1200px){
+    @media all and (max-width: 768px){
         header{
             display:flex;
             flex-direction:column;
