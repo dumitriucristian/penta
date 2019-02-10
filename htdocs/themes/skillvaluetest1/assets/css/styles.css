@@ -112,22 +112,20 @@
         display:flex;
         flex-direction:column;
         width: 100%;
-        min-height:500px;
         background-image:url("../images/freelancer_hero.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        border-bottom: 7px solid #f8bd32;
     }
 
     .banner-content{
         color: white;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        align-self: center;
         text-align: center;
-        font-size: 1.3em;
-        width: 65%;
+        font-size: 1.2em;
+
     }
 
     .banner-content h2{
@@ -250,7 +248,7 @@
     /* FOOTER ONE*/
     #footer-one{
         padding-top: 3em;
-        padding-bottom:3em;
+        padding-bottom:1em;
         justify-content: space-around;
     }
 
@@ -340,6 +338,21 @@
     .social{
         display: flex;
     }
+/*
+    .banner-content > *{
+        display:flex;
+    }
+*/
+    a.anchor_button {
+        background: #f8bd32;
+        color: #13201d;
+        border-radius: 100%;
+        text-align: center;
+        font-size: 15px;
+        position: relative;
+        top: 7px;
+        padding: 2px 5px 0px 5px;
+    }
 
     @media all and (max-width: 768px){
         header, footer, #footer-one, #footer-two, #footer-three, .col-left, .col-right, #right-footer
@@ -380,6 +393,9 @@
 
         #right-footer a {
             border:none;
+        }
+        a.search{
+            padding:0;
         }
     }
 
