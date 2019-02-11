@@ -7,6 +7,7 @@
     }
 
     p {
+        color:black;
         font-size:1.1em;
         padding: .5em;
     }
@@ -14,12 +15,27 @@
     a{
         color:#ffc53e;
     }
+    h2{
+        font-size: 1.8em;
+        color:black;
+    }
+
+    ul li {
+        color:black;
+        list-style: none;
+    }
 
     form{
         display: flex;
         align-items: center;
     }
-
+    .banner-content h2{
+        color:white;
+        padding: .6em 0;
+    }
+    .banner-content p{
+        color:white;
+    }
     #wrapper{
         display: flex;
         width: 100%;
@@ -30,18 +46,7 @@
 
     /* END GENERAL */
 
-    /* CONTENT */
 
-    content{
-        display: flex;
-        flex-direction: column;
-        color: black;
-        flex: 1;
-        width: 80%;
-        margin-left: 10%;
-        min-height: 150px;
-    }
-    /* END CONTENT */
 
     /* HEADER */
     header{
@@ -128,10 +133,7 @@
 
     }
 
-    .banner-content h2{
-        font-size: 1.8em;
-        padding: .6em 0;
-    }
+
 
     .banner-content p{
         max-width:30em;
@@ -239,7 +241,13 @@
     .col-right{
         margin-left: 10%;
     }
+    #footer-one h2{
+        color:white;
+    }
 
+    #footer-one p{
+        color:white;
+    }
     .col-left, .col-right{
         flex: 1;
         max-width: 36em;
@@ -271,8 +279,7 @@
     #footer-two .logo{
         padding: 0 15px 0 15px;
         margin-top: 0;
-        width: 118px;
-        height: 96px;
+        width: 85px;
         min-width: 64px;
     }
 
@@ -338,11 +345,7 @@
     .social{
         display: flex;
     }
-/*
-    .banner-content > *{
-        display:flex;
-    }
-*/
+
     a.anchor_button {
         background: #f8bd32;
         color: #13201d;
@@ -354,6 +357,42 @@
         padding: 2px 5px 0px 5px;
     }
 
+    /* CONTENT */
+    content{
+        color:black;
+    }
+
+    content{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        flex: 1;
+        width: 80%;
+        margin-left: 10%;
+        min-height: 150px;
+    }
+    .members{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .deco-sign{
+        border: solid 2px #f8bd32;
+        width: 3em;
+        margin-top: 2em;
+        display:flex;
+        align-self:center;
+
+    }
+    content .button-large{
+
+        display: flex;
+        align-self: center;
+
+    }
+    /* END CONTENT */
+
+    /* @@ media Queryes start */
     @media all and (max-width: 768px){
         header, footer, #footer-one, #footer-two, #footer-three, .col-left, .col-right, #right-footer
         {
@@ -398,5 +437,5 @@
             padding:0;
         }
     }
-
+    /* @@ media Queryes end */
 
