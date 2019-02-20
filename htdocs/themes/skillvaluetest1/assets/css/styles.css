@@ -54,13 +54,28 @@
         flex-direction: column;
         align-items:center;
 
+
+    }
+
+    .background-wrapper{
+        padding-top: 3em;
+        padding-bottom: 3em;
     }
     .background-wrapper h3,
     .background-wrapper h2,
     .background-wrapper p{
         color:white;
     }
-
+    /* swiper */
+    .swiper-container {
+        width: 80%;
+        height: 300px;
+    }
+    .swiper-slide{
+        display:flex;
+        width:100px;
+    }
+    /*end swiper*/
     /* CARDS */
     .card-image{
 
@@ -658,12 +673,16 @@
         flex-wrap: wrap;
         justify-content: center;
 
+
     }
 
     .counter{
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 14em;
+        padding: 1em;
+        margin: 1em;
     }
     .counter p{
         text-align: center;
@@ -676,6 +695,7 @@
         border: solid 3px white;
         border-radius: 50%;
         font-size: 2em;
+        margin: 0 0 0.5em 0;
     }
 
 
@@ -696,14 +716,7 @@
     #left-footer p{color:white;}
 
     /* @@ media Queries start */
-    @media all and (min-width: 1440px) {
 
-
-
-    }
-    @media all and (min-width: 1024px) {
-
-    }
     @media all and (max-width: 768px){
         header, footer, #footer-one, #footer-two, #footer-three, .col-left, .col-right, #right-footer
         {
@@ -770,6 +783,15 @@
             justify-content: center;
         }
 
+        #coders img{
+            max-width:19em;
+        }
+
+        #coders img:after{
+            display:none;
+        }
+
+        #coders picture::after{content:none;}
     }
     /* @@ media Queryes end */
 

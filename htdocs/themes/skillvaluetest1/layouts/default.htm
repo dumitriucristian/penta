@@ -15,6 +15,7 @@ forceSecure = 0
 paramCode = "code"
 ==
 <!DOCTYPE html>
+<!--https://idangero.us/swiper/get-started/-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -26,6 +27,13 @@ paramCode = "code"
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
           crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -43,9 +51,9 @@ paramCode = "code"
                     </div>
                     <div id="right-nav">
                         <form>
-                            <input type="button"  class="button-small" value="Sign In">
+                            <a href="https://skillvalue.com/en/auth/login"><input type="button"  class="button-small" value="Sign In"></a>
                             <span>or</span>
-                            <input type="button" class="button-small" value="Sign Up">
+                            <a href="https://skillvalue.com/en/auth/business/signup"><input type="button" class="button-small" value="Sign Up"></a>
                             <a href="#" class="search" ><i class="fas fa-search"></i></a>
                         </form>
                     </div>
@@ -73,101 +81,109 @@ paramCode = "code"
                 <h2>Members that just finished a job</h2>
                 <p>Lorem psum dolor sit amet,  coassessment and hackathons, through which you can assess, attract and engage your community </p>
 
-                <div class="cards">
-                    <a href="" class="left-card-button"><i class="fas fa-chevron-left"></i></a>
-                    <div class="card">
-                        <picture class="thumbnail">
-                            <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
-                        </picture>
 
-                        <div class="card-header">
-                            <h3  class="name">Name John Doe</h3>
-                            <h4 class="position">POSITIN ui/UX DESIGNER</h4>
-                        </div>
-                        <div class="card-content">
-                            <ul class="personal-info">
-                                <li><i class="fas fa-graduation-cap"></i>Advanced</li>
-                                <li><i class="fas fa-map-marker-alt"></i></i>Bucharest, Romania</li>
-                                <li><i class="fas fa-graduation-cap"></i>Certified By SkillValue</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <div class="teck-tag">
-                                <a href="">Windows</a>
-                                <a href="">Linux</a>
-                                <a href="">Unix</a>
-                                <a href="">Aix</a>
-                                <a href="">Ansible</a>
-                                <a href="">Chef</a>
+                    <div class="cards">
+                        <a href="" class="left-card-button"><i class="fas fa-chevron-left"></i></a>
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <picture class="thumbnail">
+                                            <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
+                                        </picture>
+
+                                        <div class="card-header">
+                                            <h3  class="name">Name John Doe</h3>
+                                            <h4 class="position">POSITIN ui/UX DESIGNER</h4>
+                                        </div>
+                                        <div class="card-content">
+                                            <ul class="personal-info">
+                                                <li><i class="fas fa-graduation-cap"></i>Advanced</li>
+                                                <li><i class="fas fa-map-marker-alt"></i></i>Bucharest, Romania</li>
+                                                <li><i class="fas fa-graduation-cap"></i>Certified By SkillValue</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="teck-tag">
+                                                <a href="">Windows</a>
+                                                <a href="">Linux</a>
+                                                <a href="">Unix</a>
+                                                <a href="">Aix</a>
+                                                <a href="">Ansible</a>
+                                                <a href="">Chef</a>
+                                            </div>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <picture class="thumbnail">
+                                            <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
+                                        </picture>
+                                        <div class="card-header">
+                                            <h3  class="name">Name John Doe</h3>
+                                            <h4 class="position">Senior Full Stack Developer</h4>
+                                        </div>
+                                        <div class="card-content">
+                                            <ul class="personal-info">
+                                                <li><i class="fas fa-graduation-cap"></i>Advanced</li>
+                                                <li><i class="fas fa-map-marker-alt"></i></i>Bucharest, Romania</li>
+                                                <li><i class="fas fa-graduation-cap"></i>Certified By SkillValue</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="teck-tag">
+                                                <a href="">Windows</a>
+                                                <a href="">Linux</a>
+                                                <a href="">Unix</a>
+                                                <a href="">Aix</a>
+                                                <a href="">Ansible</a>
+                                                <a href="">Chef</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                       <picture class="thumbnail">
+                                            <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
+                                       </picture>
+                                        <div class="card-header">
+                                            <h3  class="name">Name John Doe</h3>
+                                            <h4 class="position">POSITIN ui/UX DESIGNER</h4>
+                                        </div>
+                                        <div class="card-content">
+                                            <ul class="personal-info">
+                                                <li><i class="fas fa-graduation-cap"></i>Advanced</li>
+                                                <li><i class="fas fa-map-marker-alt"></i>Bucharest, Romania</li>
+                                                <li><i class="fas fa-graduation-cap"></i>Certified By SkillValue</li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="teck-tag">
+                                                <a href="">Windows</a>
+                                                <a href="">Linux</a>
+                                                <a href="">Unix</a>
+                                                <a href="">Aix</a>
+                                                <a href="">Ansible</a>
+                                                <a href="">Chef</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+
+                                <div class="swiper-slide">
+                                    <div class="card yellow-card">
+                                       <p>Sign Up for free to see more  great freelancers!</p>
+                                       <a href="" class="dark-button">GET STARTED</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
-
-                    <div class="card">
-                        <picture class="thumbnail">
-                            <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
-                        </picture>
-                        <div class="card-header">
-                            <h3  class="name">Name John Doe</h3>
-                            <h4 class="position">Senior Full Stack Developer</h4>
-                        </div>
-                        <div class="card-content">
-                            <ul class="personal-info">
-                                <li><i class="fas fa-graduation-cap"></i>Advanced</li>
-                                <li><i class="fas fa-map-marker-alt"></i></i>Bucharest, Romania</li>
-                                <li><i class="fas fa-graduation-cap"></i>Certified By SkillValue</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <div class="teck-tag">
-                                <a href="">Windows</a>
-                                <a href="">Linux</a>
-                                <a href="">Unix</a>
-                                <a href="">Aix</a>
-                                <a href="">Ansible</a>
-                                <a href="">Chef</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <picture class="thumbnail">
-                            <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
-                        </picture>
-                        <div class="card-header">
-                            <h3  class="name">Name John Doe</h3>
-                            <h4 class="position">POSITIN ui/UX DESIGNER</h4>
-                        </div>
-                        <div class="card-content">
-                            <ul class="personal-info">
-                                <li><i class="fas fa-graduation-cap"></i>Advanced</li>
-                                <li><i class="fas fa-map-marker-alt"></i>Bucharest, Romania</li>
-                                <li><i class="fas fa-graduation-cap"></i>Certified By SkillValue</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <div class="teck-tag">
-                                <a href="">Windows</a>
-                                <a href="">Linux</a>
-                                <a href="">Unix</a>
-                                <a href="">Aix</a>
-                                <a href="">Ansible</a>
-                                <a href="">Chef</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card yellow-card">
-                        <p>Sign Up for free to see more  great freelancers!</p>
-                       <a href="" class="dark-button">GET STARTED</a>
-                    </div>
-
-                </div>
-
                 <input type="button" class="transparent" value="SEE ALL THE PROFILES" />
             </div>
-
+        </div>
 
             <div class="section">
                 <span class="deco-sign"></span>
@@ -401,4 +417,15 @@ paramCode = "code"
         </footer>
     </div>
 </body>
+<script>
+    var swiper = new Swiper('.swiper-container',{
+        slidesPerView: 2,
+        spaceBetween: 2,
+        breakpoints:{
+            640:{
+                slidesPerView:1
+            }
+        }
+    });
+</script>
 </html>
