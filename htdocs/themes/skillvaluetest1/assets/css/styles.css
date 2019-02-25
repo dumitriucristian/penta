@@ -102,16 +102,17 @@
     #small-nav{
         background-color: black;
         width: 100%;
+
     }
 
     #small-nav p{
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 0.3em 0;
-        font-size: 0.8em;
-        color: #ffc53e;
+        padding-left: 16%;
         text-transform: uppercase;
+        color: #ffc53e;
+        font-size: 0.8em;
     }
+
+
 
     /* CARDS */
     .card-image{
@@ -136,13 +137,14 @@
     .name{
         text-transform: uppercase;
         font-size: 0.8em;
+        padding:5px;
     }
 
 
     .position{
         color: gray;
         font-size: 0.9em;
-        padding: 0 25px;
+
 
     }
 
@@ -187,10 +189,9 @@
 
 
     .card-header{
-        height: 2em;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        flex:none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .card-content{
@@ -352,7 +353,7 @@
     }
     /* MAIN BANNER */
 
-    #top-banner{
+    .top-banner{
         display:flex;
         flex-direction:column;
         width: 100%;
@@ -788,10 +789,38 @@
     /* END CONTENT */
 
     #left-footer p{color:white;}
-
+    @media all and (max-width: 1440px) {
+        #small-nav{
+            padding-left: 10%;
+        }
+    }
     /* @@ media Queries start */
+    @media all and (max-width: 1024px) {
+        header {
+            max-width: 940px;
+        }
 
+        #search-bar {
+
+            width: 90%;
+
+        }
+
+        #small-nav{
+            padding-left: 0%;
+        }
+
+        #footer-one, #footer-two {
+            max-width: 950px;
+        }
+        .cards{
+            max-width: 1024px;
+        }
+    }
     @media all and (max-width: 768px){
+        img{
+            max-width: 15em;
+        }
 
         input[type="button"]{
             max-width: 19em;
@@ -879,6 +908,10 @@
         }
 
         #coders picture::after{content:none;}
+
+        .cards{
+            max-width:300px;
+        }
     }
     /* @@ media Queryes end */
 
