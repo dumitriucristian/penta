@@ -25,6 +25,12 @@
         text-decoration: none;
     }
 
+    h1{
+        margin: 1em;
+        padding: 0 1em;
+        max-width: 15em;
+    }
+
     h2{
         font-size: 1.8em;
         color:black;
@@ -53,29 +59,60 @@
         display:flex;
         flex-direction: column;
         align-items:center;
+        background-color:#171717;
 
 
+    }
+    .dark > *, .dark p{
+        color:white;
+    }
+
+    .light{
+        color:black;
+    }
+
+    select{
+        padding: 8px;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.7em;
+        background-color: #e8e8e8;
+        color: black;
     }
 
     .background-wrapper{
         padding-top: 3em;
         padding-bottom: 3em;
     }
-    .background-wrapper h3,
-    .background-wrapper h2,
-    .background-wrapper p{
-        color:white;
-    }
+
     /* swiper */
     .swiper-container {
         width: 80%;
-        height: 300px;
+        height: 450px;
     }
     .swiper-slide{
         display:flex;
         width:100px;
     }
     /*end swiper*/
+    /*small nav*/
+    /*end small nav*/
+    #small-nav{
+        background-color: black;
+        width: 100%;
+    }
+
+    #small-nav p{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0.3em 0;
+        font-size: 0.8em;
+        color: #ffc53e;
+        text-transform: uppercase;
+    }
+
     /* CARDS */
     .card-image{
 
@@ -92,7 +129,8 @@
         display:flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 1em 0;
+        margin: 0 auto;
+        max-width: 1250px;
     }
 
     .name{
@@ -133,6 +171,7 @@
         border-radius: 3px;
         z-index: 3;
         cursor: pointer;
+        display:none;
     }
 
     h4.quiz{
@@ -229,7 +268,10 @@
            flex-direction: column;
            text-align: left;
            padding:1em;
+           flex:1;
+           max-width: 370px;
        }
+
 
        #coders-one p{
            margin:0;
@@ -318,6 +360,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         border-bottom: 7px solid #f8bd32;
+        padding: 3em 0;
     }
 
     .banner-content{
@@ -339,13 +382,13 @@
 
      input[type="button"],  input[type="submit"]{
         margin: 5px;
-        padding: 3px;
+        padding: 10px 20px;
         cursor: pointer;
         border-radius: 4px;
         color: black;
         font-weight: bold;
         background-color: #ffc53e;
-        border-color: #ffc53e;
+        border-color:   #ffc53e;
         text-transform: uppercase;
         font-size: .8em;
          min-height:30px;
@@ -354,6 +397,7 @@
          display: flex;
          align-self: center;
          justify-content: center;
+
      }
 
     input[type="button"]:hover{
@@ -548,10 +592,34 @@
     }
 
     a.search{
-        padding: .1em 1em;
+        padding: 0 1em;
         font-size: 1.9em;
-        color: #ffc53e;
+        color: black;
+        background-color: #ffc53e;
     }
+    /*searchbar*/
+    #search-bar{
+        width: 100%;
+        background-color: white;
+
+
+    }
+
+    #search-bar input[type="text"]{
+        width: 100%;
+        background-color: white;
+        border: none;
+        padding: 0 4em;
+    }
+    #search-container{
+        display: flex;
+        max-width: 1280px;
+        margin: 0 auto;
+        max-width: 1280px;
+        justify-content: space-between;
+
+    }
+    /*end searchbar*/
 
     .fab {
         border-radius: 100%;
@@ -604,6 +672,9 @@
         max-width: 1280px;
         min-height: 150px;
         margin: 0 auto;
+        color:black;
+        align-items: center;
+
     }
     .section{
         display: flex;
@@ -620,9 +691,10 @@
     }
 
    #coders picture img{
-        width: 24em;
+        width: 30em;
         position: relative;
         top: 100px;
+
     }
 
     .yellow-card{
@@ -646,12 +718,13 @@
         border-radius: 2px;
         font-size: 0.8em;
         font-weight: bold;
-        width: 10em;
+        width: 7em;
     }
 
     #coders-one .dark-button{
         position: relative;
         top: 7em;
+
 
     }
 
@@ -699,15 +772,16 @@
     }
 
 
-    #coders picture::after{
+    #coders picture::before{
         content: '';
         border-top: solid 20px white;
         border-left: solid 20px white;
         position: relative;
         padding: 9px 18px;
-        top: -8em;
-        left: -11em;
+        top: 9em;
+        left: -14em;
         border-radius: 2px;
+        z-index: 4;
     }
 
 
@@ -718,6 +792,19 @@
     /* @@ media Queries start */
 
     @media all and (max-width: 768px){
+
+        input[type="button"]{
+            max-width: 19em;
+            font-size: 0.7em;
+        }
+
+       h2{
+            padding: 1em;
+        }
+        p{
+            padding: 1em;
+            text-align: center;
+        }
         header, footer, #footer-one, #footer-two, #footer-three, .col-left, .col-right, #right-footer
         {
             display:flex;
