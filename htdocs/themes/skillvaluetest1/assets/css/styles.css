@@ -63,6 +63,9 @@
 
 
     }
+    .dark h2{
+        color:white;
+    }
     .dark > *, .dark p{
         color:white;
     }
@@ -112,7 +115,12 @@
         font-size: 0.8em;
     }
 
-
+    #search-quiz{
+        display: flex;
+        max-width: 1280px;
+        justify-content: center;
+        margin: 0 auto;
+    }
 
     /* CARDS */
     .card-image{
@@ -126,6 +134,8 @@
         border-bottom: 5px solid #ffc53e;
 
     }
+
+
     .cards{
         position:relative;
         display:flex;
@@ -215,7 +225,7 @@
         display: block;
         border: 0;
         width: 50%;
-        height: 135px;
+        height: 115px;
         border-radius: 50%;
         margin: 0 auto;
         padding: 15px;
@@ -230,7 +240,7 @@
         text-align: left;
         position: relative;
         left: -85px;
-        top: -21px;
+        top: -3px;
         background-color: #ffc53e;
         border-radius: 4px 4px 0px 0px;
         font-size: 0.8em;
@@ -243,6 +253,46 @@
     .card picture{
         height:160px;
     }
+    a.yellow-action{
+        background-color: #ffc53e;
+        color: black;
+        width: 100%;
+        padding: 10px 0;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    /*quality*/
+    .quality{
+        margin-top:4em;
+        height:100%;
+    }
+
+    .quality{}
+    .quality .card-header{
+        background-color:#646464;
+        height:100%;
+    }
+    .quality picture{
+        background-color: #ffc53e;
+        padding: 1em;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        position: absolute;
+        left: 27%;
+        top: -38px;
+        border: solid 3px white;
+    }
+
+    .quality img{
+        width: 89%;
+        transform: rotate(-45deg);
+    }
     /* end cards*/
     .teck-tag{
         padding: 7px 2px 5px 2px;
@@ -250,6 +300,47 @@
         justify-content: center;
         display: flex;
         margin: 2px;
+
+    }
+    .quality .title{
+        font-weight: bold;
+        color: #ffc53e;
+        margin-top: 70px;
+    }
+
+    .solid-gradient{
+        background: linear-gradient(to bottom, white 30%, #eaeaea 30%);
+
+    }
+    .subtitle{
+        color: white;
+    }
+    .price-title{
+        border-top: solid 1px #9b9b9b;;
+        color: white;
+        font-size: 1.5em;
+        margin-top: 0.1em;
+        font-weight: bold;
+        width: 75%;
+    }
+    .quality li{
+        padding: 0.5em 1.8em;
+        text-align:left;
+        text-transform: capitalize;
+    }
+    .quality li:nth-child(odd){
+        background-color:#ebebeb;
+    }
+    .quality .card-content{
+        padding: 0;
+        height: 100%;
+    }
+
+    .quality .card{
+        height:100%;
+        padding-bottom:0;
+        position: relative;
+        margin-left: 25px;
 
     }
     .teck-tag a{
@@ -676,14 +767,14 @@
         background-color: #ffc53e;
     }
     /*searchbar*/
-    #search-bar{
+    .search-bar{
         width: 100%;
         background-color: white;
 
 
     }
 
-    #search-bar input[type="text"]{
+    .search-bar input[type="text"]{
         width: 100%;
         background-color: white;
         border: none;
@@ -862,14 +953,29 @@
         z-index: 4;
     }
 
+    .column-icon{
+        font-size: 2em;
+        background-color: #ffc53e;
+        border-radius: 100%;
+        padding: 14px;
+        border: solid 3px white;
+    }
+
+    .horizontal-columns{
+        display: flex;
+        align-items: center;
+
+        margin: 2em 0;
+    }
 
     /* END CONTENT */
 
     #left-footer p{color:white;}
     @media all and (max-width: 1440px) {
         #small-nav{
-            padding-left: 10%;
+           /*  padding-left: 10%; */
         }
+
     }
     /* @@ media Queries start */
     @media all and (max-width: 1024px) {
@@ -877,7 +983,8 @@
             max-width: 940px;
         }
 
-        #search-bar {
+
+        .search-bar {
 
             width: 90%;
 
@@ -895,6 +1002,14 @@
         }
     }
     @media all and (max-width: 768px){
+        .horizontal-columns{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .quality .card{
+            margin-left: 0;
+            margin-top: 4em;
+        }
         img{
             max-width: 15em;
         }

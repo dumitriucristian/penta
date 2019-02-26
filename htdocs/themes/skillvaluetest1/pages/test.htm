@@ -49,7 +49,7 @@ is_hidden = 0
                 </form>
             </div>
         </header>
-        <div id="search-bar">
+        <div class="search-bar">
              <div id="search-container">
                 <select>
                     <option >Freelance CVS</option>
@@ -57,7 +57,25 @@ is_hidden = 0
                     <option >Quizzes</option>
 
                 </select>
+
                 <input type="text" placeholder="What are you looking for?">
+                <a href="#" class="search" ><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+        <div class="search-bar">
+            <div id="search-quiz">
+                <input type="text" placeholder="What are you looking for?">
+                <select>
+                    <option >By Language</option>
+                    <option >Articles</option>
+                    <option >Quizzes</option>
+                </select>
+                <select>
+                    <option >By level</option>
+                    <option >Articles</option>
+                    <option >Quizzes</option>
+                </select>
+
                 <a href="#" class="search" ><i class="fas fa-search"></i></a>
             </div>
         </div>
@@ -447,8 +465,8 @@ is_hidden = 0
             <span class="deco-sign"></span>
 
             <div style="display:flex;     flex-wrap: wrap;">
-                            <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}"
-                                 style="height: auto;  align-self: baseline; width: 22em; padding: 0 1em;" />
+                <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}"
+                     style="height: auto;  align-self: baseline; width: 22em; padding: 0 1em;" />
 
                 <div style="flex-direction:column;" >
                     <h2>Skillvale, it is also a platform for coders!</h2>
@@ -458,81 +476,245 @@ is_hidden = 0
         </div>
     </div>
 
-        <footer>
-            <div id="footer-one">
-                <div class="col-left">
-                    <h2>LET'S KEEP <a href="">IN TOUCH</a>!</h2>
-                    <p>
-                        SkillValue is your full-stack assessment solution that goes the extra mile <a href="">with you</a>.
+    <div class="background-wrapper dark" style="background-color:black;">
+        <div class="content" >
+
+            <span class="deco-sign"></span>
+
+            <div style="display:flex;     flex-wrap: wrap; flex-direction:row-reverse;">
+                <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}"
+                     style="height: auto;  align-self: baseline; width: 22em; padding: 0 1em;" />
+
+                <div style="flex-direction:column;" >
+                    <h2>Skillvale, it is also a platform for coders!</h2>
+                    <p>As a code, access your skills, compete with the comunity, prove your talent!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section solid-gradient">
+        <span class="deco-sign" ></span>
+        <h2>Skillvale, it is also a platform for coders!</h2>
+        <div class="cards quality">
+            <div class="card">
+                <picture>
+                    <img src="{{  '/assets/images/startup.png'|theme }}">
+                </picture>
+                <div class="card-header">
+                    <p class="title">STARTER</p>
+                    <p class="subtitle">Perfect!<b>for start-ups</b>and software publishers</p>
+                    <p class="price-title">
+                        <span>it's</span> FREE!
                     </p>
                 </div>
-                <div class="col-right">
-                    <div id="subscribe" class="col">
-                        <input type="text" placeholder="something">
-                        <input type="submit" value="submit">
-
-
-                    </div>
-                    <div class="col"><input type="checkbox"><label>This is a text for checkbox</label></div>
-
+                <div class="card-content">
+                    <a href="#" class="yellow-action">Get it now</a>
+                    <ul>
+                        <li>sdsdsd sl</li>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd slsdf dkfjsl</li>
+                        <li>sdsdsd sldkfj sl</li>
+                        <li>sdsdsd sldkfjssss l</li>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd sldk sd fjsl</li>
+                        <li>sdsdsd sldkl</li>
+                    </ul>
                 </div>
             </div>
-            <div id="footer-two">
-                <div class="col-left">
-                    <div class="col">
-                        <div class="logo">Skillvalue</div>
-                        <h4>More About US    <a href="#"> Here</a>!</h4>
-                    </div>
-                    <div class="col">
-                        <h4>Our Main Services</h4>
-                        <ul>
-                            <li><a href="">Freelancers</a></li>
-                            <li><a href="">Assessments</a></li>
-                            <li><a href="">Recruitment</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h4>Other Services</h4>
-                        <ul>
-                            <li><a href="">Assess your knowledge</a></li>
-                            <li><a href="">Assess your skills</a></li>
-                            <li><a href="">Compete with others</a></li>
-                            <li><a href="">Find your next job</a></li>
-                        </ul>
-                    </div>
+            <div class="card">
+                <picture>
+                    <img src="{{  '/assets/images/startup.png'|theme }}">
+                </picture>
+                <div class="card-header">
+                    <p class="title">STARTER</p>
+                    <p class="subtitle">Perfect!<b>for start-ups</b>and software publishers</p>
+                    <p class="price-title">
+                        <span>it's</span> FREE!
+                    </p>
                 </div>
-                <div class="col-right">
-                    <div class="col">
-                        <h4>Contact</h4>
-                        <ul class="contact">
-                            <li><i class="fas fa-map-marker-alt"></i><span>153, rue Saint-Martin 75003, Paris, FRANCE</span></li>
-                            <li><i class="fas fa-phone"></i><span>+22 (0) 2 46024012 2</span></li>
-                            <li><i class="far fa-envelope"></i><span>contact@skillvalue.com</span></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h4>FOLLOW US ON</h4>
-                        <ul class="social">
-                            <li><a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
+                <div class="card-content">
+                    <a href="#" class="yellow-action">Get it now</a>
+                    <ul>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd sl</li>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd slsdf dkfjsl</li>
+                        <li>sdsdsd sldkfj sl</li>
+                        <li>sdsdsd sldkfjssss l</li>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd sldk sd fjsl</li>
+                        <li>sdsdsd sldkl</li>
+                    </ul>
                 </div>
             </div>
+            <div class="card">
+                <picture>
+                    <img src="{{  '/assets/images/startup.png'|theme }}">
+                </picture>
+                <div class="card-header">
+                    <p class="title">STARTER</p>
+                    <p class="subtitle">Perfect!<b>for start-ups</b>and software publishers</p>
+                    <p class="price-title">
+                        <span>it's</span> FREE!
+                    </p>
+                </div>
+                <div class="card-content">
+                    <a href="#" class="yellow-action">Get it now</a>
+                    <ul>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd sldkfjsl</li>
 
-
-            <div id="footer-three">
-                <div id="left-footer"><p>@Copyright 2019 SkillValue. All rights reserved</p></div>
-                <div id="right-footer">
-                     <a href=""> General terms and conditions</a>
-                     <a href=""> Legal statement </a>
-                     <a href=""> Privacy policy </a>
-                     <a href=""> Cookies Charter</a>
+                        <li>sdsdsd sldkfj sl</li>
+                        <li>sdsdsd sldkfjssss l</li>
+                        <li>sdsdsd sldkfjsl</li>
+                        <li>sdsdsd sldk sd fjsl</li>
+                        <li>sdsdsd sldkl</li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+        </div>
+        <p class="note">adfa sdfasdf asdf asdf asdf asdf asdf asdf asdf </p>
     </div>
+    <div class="background-wrapper dark" style="background-color:black;">
+        <div class="content">
+
+            <span class="deco-sign"></span>
+
+            <div style="display:flex;     flex-wrap: wrap; flex-direction:row-reverse; justify-content: center">
+
+
+                <div style="flex-direction:column; ">
+                    <h2>Skillvale, it is also a platform for coders!</h2>
+                    <p>As a code, access your skills, compete with the comunity, prove your talent!</p>
+                </div>
+
+                <div class="horizontal-columns">
+                    <div class="icon-container">
+                        <i class="fas fa-users column-icon"></i>
+                    </div>
+
+                    <p>Lorem alskdf alsdf asdlfj alsdalskdfjlaksd fa
+                        dklfjlskadf alskdjf laksdf lkadsf asldkfj alsdkfjla
+                        asdfasdfasdfsadf
+                    </p>
+                    <div class="icon-container">
+                        <i class="fas fa-users column-icon"></i>
+                    </div>
+
+                    <p>Lorem alskdf alsdf asdlfj alsdalskdfjlaksd fa
+                        dklfjlskadf alskdjf laksdf lkadsf asldkfj alsdkfjla
+                        asdfasdfasdfsadf
+                    </p>
+                    <div class="icon-container">
+                        <i class="fas fa-users column-icon"></i>
+                    </div>
+
+                    <p>Lorem alskdf alsdf asdlfj alsdalskdfjlaksd fa
+                        dklfjlskadf alskdjf laksdf lkadsf asldkfj alsdkfjla
+                        asdfasdfasdfsadf
+                    </p>
+                    <div class="icon-container">
+                        <i class="fas fa-users column-icon"></i>
+                    </div>
+
+                    <p>Lorem alskdf alsdf asdlfj alsdalskdfjlaksd fa
+                        dklfjlskadf alskdjf laksdf lkadsf asldkfj alsdkfjla
+                        asdfasdfasdfsadf
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+<! -- FOOTER BLOCK -->
+
+    <footer>
+        <div id="footer-one">
+            <div class="col-left">
+                <h2>LET'S KEEP <a href="">IN TOUCH</a>!</h2>
+                <p>
+                    SkillValue is your full-stack assessment solution that goes the extra mile <a href="">with you</a>.
+                </p>
+            </div>
+            <div class="col-right">
+                <div id="subscribe" class="col">
+                    <input type="text" placeholder="something">
+                    <input type="submit" value="submit">
+
+
+                </div>
+                <div class="col"><input type="checkbox"><label>This is a text for checkbox</label></div>
+
+            </div>
+        </div>
+        <div id="footer-two">
+            <div class="col-left">
+                <div class="col">
+                    <div class="logo">Skillvalue</div>
+                    <h4>More About US    <a href="#"> Here</a>!</h4>
+                </div>
+                <div class="col">
+                    <h4>Our Main Services</h4>
+                    <ul>
+                        <li><a href="">Freelancers</a></li>
+                        <li><a href="">Assessments</a></li>
+                        <li><a href="">Recruitment</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Other Services</h4>
+                    <ul>
+                        <li><a href="">Assess your knowledge</a></li>
+                        <li><a href="">Assess your skills</a></li>
+                        <li><a href="">Compete with others</a></li>
+                        <li><a href="">Find your next job</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="col">
+                    <h4>Contact</h4>
+                    <ul class="contact">
+                        <li><i class="fas fa-map-marker-alt"></i><span>153, rue Saint-Martin 75003, Paris, FRANCE</span></li>
+                        <li><i class="fas fa-phone"></i><span>+22 (0) 2 46024012 2</span></li>
+                        <li><i class="far fa-envelope"></i><span>contact@skillvalue.com</span></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>FOLLOW US ON</h4>
+                    <ul class="social">
+                        <li><a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer-three">
+            <div id="left-footer"><p>@Copyright 2019 SkillValue. All rights reserved</p></div>
+            <div id="right-footer">
+                 <a href=""> General terms and conditions</a>
+                 <a href=""> Legal statement </a>
+                 <a href=""> Privacy policy </a>
+                 <a href=""> Cookies Charter</a>
+            </div>
+        </div>
+    </footer>
+</div>
 </body>
 <script>
    //http://idangero.us/swiper/get-started/
