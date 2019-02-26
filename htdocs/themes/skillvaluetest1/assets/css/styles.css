@@ -210,6 +210,22 @@
         margin: 15px 15px 15px 15px;
         height: 5em;;
     }
+    .card-logo{
+        display: block;
+        border: 0;
+        width: 50%;
+        height: 102px;
+        border-radius: 50%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    .quiz-bgd{
+        background-image:url("../images/quiz-bgd.jpg");
+    }
+    .quiz-cat-bgd{
+        background-image:url("../images/quiz-cat-bgd.jpg");
+    }
+    /* end cards*/
     .teck-tag{
         padding: 7px 2px 5px 2px;
         flex-wrap: wrap;
