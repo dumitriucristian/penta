@@ -123,6 +123,7 @@
         height: auto;
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
+        border-bottom: 5px solid #ffc53e;
 
     }
     .cards{
@@ -152,13 +153,13 @@
 
         display: flex;
         flex-direction: column;
-        width: 14em;
-        margin: 1em;
-        height: 25em;
+        width: 15em;
+         height: 27em;
         background-color: white;
         border-radius: 4px;
         box-shadow: 2px 1px 14px 1px rgba(97,97,97,0.4);
         z-index:4;
+        padding-bottom: 2em;
     }
 
     .left-card-button{
@@ -214,7 +215,7 @@
         display: block;
         border: 0;
         width: 50%;
-        height: 102px;
+        height: 135px;
         border-radius: 50%;
         margin: 0 auto;
         padding: 15px;
@@ -224,6 +225,23 @@
     }
     .quiz-cat-bgd{
         background-image:url("../images/quiz-cat-bgd.jpg");
+    }
+    .new-tag{
+        text-align: left;
+        position: relative;
+        left: -85px;
+        top: -21px;
+        background-color: #ffc53e;
+        border-radius: 4px 4px 0px 0px;
+        font-size: 0.8em;
+        padding: 1px 8px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .card picture{
+        height:160px;
     }
     /* end cards*/
     .teck-tag{
@@ -268,6 +286,50 @@
         width: 18px;
 
     }
+
+    .swiper-button-next, .swiper-button-prev{
+        background-color: #ffc53e;
+        height: 3px !important;
+        padding: 12px 14px 12px 0px !important;
+        color: white !important;
+        border-radius: 4px;
+
+        z-index: 0 !important;
+        background-image:none !important;
+    }
+
+    .swiper-button-next{
+
+        position: relative !important;
+        left: -108px !important;
+        top: 182px !important;
+    }
+
+
+    .swiper-button-prev{
+        position: absolute !important;
+        top: 187px !important;
+        left: 72px !important;
+    }
+    .swiper-button-next span, .swiper-button-prev span {
+        font-size: 20px;
+        background-image: none;
+        position: absolute;
+        font-weight:bold;
+
+    }
+
+    .swiper-button-prev span{
+        bottom: 4px;
+    }
+
+    .swiper-button-next span{
+
+
+        bottom: 2px;
+
+    }
+
     /* END CARDS*/
     /*CODERS */
        #coders{
@@ -927,6 +989,10 @@
 
         .cards{
             max-width:300px;
+        }
+
+        .swiper-button-next{
+            left: -11px !important;
         }
     }
     /* @@ media Queryes end */

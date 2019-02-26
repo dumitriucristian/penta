@@ -86,7 +86,7 @@ is_hidden = 0
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <picture class="thumbnail">
+                                        <picture>
                                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
                                         </picture>
 
@@ -115,7 +115,7 @@ is_hidden = 0
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <picture class="thumbnail">
+                                        <picture>
                                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
                                         </picture>
                                         <div class="card-header">
@@ -143,7 +143,7 @@ is_hidden = 0
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card">
-                                       <picture class="thumbnail">
+                                       <picture>
                                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
                                        </picture>
                                         <div class="card-header">
@@ -172,7 +172,7 @@ is_hidden = 0
 
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <picture class="thumbnail">
+                                        <picture>
                                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
                                         </picture>
                                         <div class="card-header">
@@ -201,7 +201,7 @@ is_hidden = 0
 
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <picture class="thumbnail">
+                                        <picture>
                                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
                                         </picture>
                                         <div class="card-header">
@@ -230,7 +230,7 @@ is_hidden = 0
 
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <picture class="thumbnail">
+                                        <picture>
                                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
                                         </picture>
                                         <div class="card-header">
@@ -264,7 +264,11 @@ is_hidden = 0
                                     </div>
                                 </div>
                             </div>
+
+
                         </div>
+                        <div class="swiper-button-next"><span> > </span></div>
+                        <div class="swiper-button-prev"><span> < </span></div>
                     </div>
                 <input type="button" class="transparent" value="SEE ALL THE PROFILES" />
             </div>
@@ -326,6 +330,7 @@ is_hidden = 0
                     <div class="card">
                         <picture class="thumbnail quiz-cat-bgd">
                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-logo" />
+                            <span class="new-tag">new</span>
                         </picture>
                         <div class="card-header">
                             <h3  class="name">JavaScript </h3>
@@ -515,20 +520,26 @@ is_hidden = 0
    //http://idangero.us/swiper/get-started/
     var swiper = new Swiper('.swiper-container',{
         slidesPerView: 4,
-        spaceBetween: 2,
+        spaceBetween: 15,
         breakpoints:{
             1250:{
                 slidesPerView:3,
+                spaceBetween: 15
             },
             768:{
                 slidesPerView:1,
+                spaceBetween: 15,
             },
 
             640:{
                 slidesPerView:1,
-                effect: 'overflow'
+                spaceBetween: 15,
 
             }
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         }
     });
 </script>
