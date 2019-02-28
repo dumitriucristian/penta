@@ -60,8 +60,6 @@
         flex-direction: column;
         align-items:center;
         background-color:#171717;
-
-
     }
     .dark h2{
         color:white;
@@ -124,7 +122,6 @@
 
     /* CARDS */
     .card-image{
-
         display: block;
         border: 0;
         width: 100%;
@@ -132,9 +129,7 @@
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
         border-bottom: 5px solid #ffc53e;
-
     }
-
 
     .cards{
         position:relative;
@@ -143,6 +138,7 @@
         flex-wrap: wrap;
         margin: 0 auto;
         max-width: 1250px;
+        margin-top: 2em;
     }
 
     .name{
@@ -150,41 +146,20 @@
         font-size: 0.8em;
         padding:5px;
     }
-
-
     .position{
         color: gray;
         font-size: 0.9em;
-
-
     }
 
     .card{
-
         display: flex;
         flex-direction: column;
         width: 15em;
-         height: 27em;
+         height: 26em;
         background-color: white;
         border-radius: 4px;
         box-shadow: 2px 1px 14px 1px rgba(97,97,97,0.4);
         z-index:4;
-        padding-bottom: 2em;
-    }
-
-    .left-card-button{
-        height: 20px;
-        position: absolute;
-        padding: 3px 25px 3px 9px;
-        left: 115px;
-        top: 193px;
-        color: white;
-        background-color: #ffc53e;
-        text-align: center;
-        border-radius: 3px;
-        z-index: 3;
-        cursor: pointer;
-        display:none;
     }
 
     h4.quiz{
@@ -193,11 +168,6 @@
         font-size: 1em;
         font-weight: bolder;
     }
-    .thumbnail{
-
-        border-bottom: 5px solid #ffc53e;
-    }
-
 
     .card-header{
         display: flex;
@@ -268,7 +238,6 @@
         height:100%;
     }
 
-    .quality{}
     .quality .card-header{
         background-color:#646464;
         height:100%;
@@ -341,7 +310,6 @@
         padding-bottom:0;
         position: relative;
         margin-left: 25px;
-
     }
     .teck-tag a{
         background-color: #eae9e9;
@@ -352,7 +320,6 @@
         text-transform: lowercase;
         margin: 3px 3px;
         display: flex;
-
     }
     .yellow-section{
         display: flex;
@@ -375,49 +342,53 @@
         padding: 4px 6px;
         color: #ffc53e;
         width: 18px;
-
     }
 
-    .swiper-button-next, .swiper-button-prev{
+    .freelancers-swiper-button-next,
+    .freelancers-swiper-button-prev,
+    .swiper-button-next,
+    .swiper-button-prev{
         background-color: #ffc53e;
         height: 3px !important;
         padding: 12px 14px 12px 0px !important;
         color: white !important;
         border-radius: 4px;
-
         z-index: 0 !important;
         background-image:none !important;
     }
 
+    .freelancers-swiper-button-next,
     .swiper-button-next{
-
         position: relative !important;
-        left: -108px !important;
+        left: -118px !important;
         top: 182px !important;
     }
 
-
+    .freelancers-swiper-button-prev,
     .swiper-button-prev{
         position: absolute !important;
         top: 187px !important;
         left: 72px !important;
     }
-    .swiper-button-next span, .swiper-button-prev span {
+
+    .freelancers-swiper-button-next span,
+    .freelancers-swiper-button-prev span,
+    .swiper-button-next span,
+    .swiper-button-prev span {
         font-size: 20px;
         background-image: none;
         position: absolute;
         font-weight:bold;
-
     }
 
+    .freelancers-swiper-button-prev span,
     .swiper-button-prev span{
         bottom: 4px;
     }
 
+    .freelancers-swiper-button-next span,
     .swiper-button-next span{
-
         bottom: 2px;
-
     }
 
     /* END CARDS*/
@@ -528,7 +499,7 @@
         background-image:url("../images/freelancer_hero.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        border-bottom: 7px solid #f8bd32;
+        /*border-bottom: 7px solid #f8bd32;*/
         padding: 3em 0;
     }
 
@@ -983,7 +954,9 @@
             max-width: 940px;
         }
 
-
+        .cards{
+            max-width:1024px;
+        }
         .search-bar {
 
             width: 90%;
@@ -997,11 +970,13 @@
         #footer-one, #footer-two {
             max-width: 950px;
         }
-        .cards{
-            max-width: 1024px;
-        }
+
     }
     @media all and (max-width: 768px){
+        .swiper-button-next{
+            display:none;
+        }
+
         .horizontal-columns{
             flex-wrap: wrap;
             justify-content: center;
@@ -1105,6 +1080,7 @@
             max-width:300px;
         }
 
+        .freelancers-swiper-button-next,
         .swiper-button-next{
             left: -11px !important;
         }
