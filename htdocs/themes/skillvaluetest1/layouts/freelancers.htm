@@ -1,0 +1,173 @@
+description = "Freelancer layout"
+
+[staticPage]
+useContent = 1
+default = 0
+==
+<!DOCTYPE html>
+<!--https://idangero.us/swiper/get-started/-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ this.page.title }}</title>
+    <meta name="description" content="{{this.page.meta_description}}"/>
+    <link href="{{ [  'assets/css/styles.css']|theme }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+    <div id="small-nav">
+        <p ><a href="">Personal </a> | <a href="">Business</a></p>
+    </div>
+    <header>
+        <div class="logo">Skillvalue</div>
+        <div id="left-nav">
+            <nav>
+                <ul>
+                    <li> <a href="#">Freelancer</a></li>
+                    <li> <a href="#">Assessments</a></li>
+                    <li> <a href="#">Recruitment</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="right-nav">
+            <form>
+                <a href="https://skillvalue.com/en/auth/login"><input type="button"  class="button-small" value="Sign In"></a>
+                <span>or</span>
+                <a href="https://skillvalue.com/en/auth/business/signup"><input type="button" class="button-small" value="Sign Up"></a>
+
+            </form>
+        </div>
+    </header>
+    <div class="search-bar">
+        <div id="search-container">
+            <select>
+                <option >Freelance CVS</option>
+                <option >Articles</option>
+                <option >Quizzes</option>
+
+            </select>
+
+            <input type="text" placeholder="What are you looking for?">
+            <a href="#" class="search" ><i class="fas fa-search"></i></a>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        {% page %}
+    </div>
+
+
+    <footer>
+        <div id="footer-one">
+            <div class="col-left">
+                <h2>LET'S KEEP <a href="">IN TOUCH</a>!</h2>
+                <p>
+                    SkillValue is your full-stack assessment solution that goes the extra mile <a href="">with you</a>.
+                </p>
+            </div>
+            <div class="col-right">
+                <div id="subscribe" class="col">
+                    <input type="text" placeholder="something">
+                    <input type="submit" value="submit">
+
+
+                </div>
+                <div class="col"><input type="checkbox"><label>This is a text for checkbox</label></div>
+
+            </div>
+        </div>
+        <div id="footer-two">
+            <div class="col-left">
+                <div class="col">
+                    <div class="logo">Skillvalue</div>
+                    <h4>More About US    <a href="#"> Here</a>!</h4>
+                </div>
+                <div class="col">
+                    <h4>Our Main Services</h4>
+                    <ul>
+                        <li><a href="">Freelancers</a></li>
+                        <li><a href="">Assessments</a></li>
+                        <li><a href="">Recruitment</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Other Services</h4>
+                    <ul>
+                        <li><a href="">Assess your knowledge</a></li>
+                        <li><a href="">Assess your skills</a></li>
+                        <li><a href="">Compete with others</a></li>
+                        <li><a href="">Find your next job</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="col">
+                    <h4>Contact</h4>
+                    <ul class="contact">
+                        <li><i class="fas fa-map-marker-alt"></i><span>153, rue Saint-Martin 75003, Paris, FRANCE</span></li>
+                        <li><i class="fas fa-phone"></i><span>+22 (0) 2 46024012 2</span></li>
+                        <li><i class="far fa-envelope"></i><span>contact@skillvalue.com</span></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>FOLLOW US ON</h4>
+                    <ul class="social">
+                        <li><a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer-three">
+            <div id="left-footer"><p>@Copyright 2019 SkillValue. All rights reserved</p></div>
+            <div id="right-footer">
+                <a href=""> General terms and conditions</a>
+                <a href=""> Legal statement </a>
+                <a href=""> Privacy policy </a>
+                <a href=""> Cookies Charter</a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+<script>
+    /*
+  //http://idangero.us/swiper/get-started/
+    var swiper = new Swiper('.swiper-container',{
+        slidesPerView: 4,
+        spaceBetween: 2,
+        breakpoints:{
+            1250:{
+                slidesPerView:3,
+            },
+            768:{
+                slidesPerView:1,
+            },
+
+            640:{
+                slidesPerView:1,
+                effect: 'overflow'
+
+            }
+        }
+    });
+    */
+
+</script>
+</html>
