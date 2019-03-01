@@ -15,7 +15,7 @@ snippetProperties[slidesPerView][options][] = ""
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="card">
-                        <picture class="thumbnail">
+                        <picture>
                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
                         </picture>
 
@@ -44,7 +44,7 @@ snippetProperties[slidesPerView][options][] = ""
                 </div>
                 <div class="swiper-slide">
                     <div class="card">
-                        <picture class="thumbnail">
+                        <picture>
                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
                         </picture>
                         <div class="card-header">
@@ -72,7 +72,7 @@ snippetProperties[slidesPerView][options][] = ""
                 </div>
                 <div class="swiper-slide">
                     <div class="card">
-                       <picture class="thumbnail">
+                       <picture>
                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
                        </picture>
                         <div class="card-header">
@@ -101,7 +101,7 @@ snippetProperties[slidesPerView][options][] = ""
 
                 <div class="swiper-slide">
                     <div class="card">
-                        <picture class="thumbnail">
+                        <picture>
                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
                         </picture>
                         <div class="card-header">
@@ -130,7 +130,7 @@ snippetProperties[slidesPerView][options][] = ""
 
                 <div class="swiper-slide">
                     <div class="card">
-                        <picture class="thumbnail">
+                        <picture>
                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
                         </picture>
                         <div class="card-header">
@@ -159,7 +159,7 @@ snippetProperties[slidesPerView][options][] = ""
 
                 <div class="swiper-slide">
                     <div class="card">
-                        <picture class="thumbnail">
+                        <picture>
                             <img src="{{  'assets/images/celebrity-profile-pictures-leonardo-2.jpg'|theme }}" class="card-image" />
                         </picture>
                         <div class="card-header">
@@ -195,9 +195,9 @@ snippetProperties[slidesPerView][options][] = ""
             </div>
 
         </div>
-
-        <div class="swiper-button-next"><span> > </span></div>
-        <div class="swiper-button-prev"><span> < </span></div>
+        <input type="button" class="transparent" value="SEE ALL THE PROFILES" />
+        <div class="swiper-button-next freelancers-next"><span> > </span></div>
+        <div class="swiper-button-prev freelancers-prev"><span> < </span></div>
 
     </div>
 
@@ -206,7 +206,7 @@ snippetProperties[slidesPerView][options][] = ""
    //http://idangero.us/swiper/get-started/
     var swiper = new Swiper('.swiper-container',{
         slidesPerView: "{{slidesPerView}}",
-        spaceBetween: 2,
+        spaceBetween: 20,
         breakpoints:{
             1250:{
                 slidesPerView:3,
@@ -223,8 +223,8 @@ snippetProperties[slidesPerView][options][] = ""
             }
         },
         navigation: {
-            nextEl: '.freelancers-swiper-button-next',
-            prevEl: '.freelancers-swiper-button-prev',
+            nextEl: '.freelancers-next',
+            prevEl: '.freelancers-prev',
         }
     });
 </script>

@@ -344,8 +344,7 @@
         width: 18px;
     }
 
-    .freelancers-swiper-button-next,
-    .freelancers-swiper-button-prev,
+
     .swiper-button-next,
     .swiper-button-prev{
         background-color: #ffc53e;
@@ -357,22 +356,21 @@
         background-image:none !important;
     }
 
-    .freelancers-swiper-button-next,
+
     .swiper-button-next{
         position: relative !important;
         left: -118px !important;
         top: 182px !important;
     }
 
-    .freelancers-swiper-button-prev,
+
     .swiper-button-prev{
         position: absolute !important;
         top: 187px !important;
         left: 72px !important;
     }
 
-    .freelancers-swiper-button-next span,
-    .freelancers-swiper-button-prev span,
+
     .swiper-button-next span,
     .swiper-button-prev span {
         font-size: 20px;
@@ -381,12 +379,12 @@
         font-weight:bold;
     }
 
-    .freelancers-swiper-button-prev span,
+
     .swiper-button-prev span{
         bottom: 4px;
     }
 
-    .freelancers-swiper-button-next span,
+
     .swiper-button-next span{
         bottom: 2px;
     }
@@ -407,9 +405,18 @@
            display: flex;
            flex-direction: column;
            text-align: left;
-           padding:1em;
            flex:1;
            max-width: 370px;
+       }
+
+       #coders-two{
+           flex:1;
+       }
+
+       #coders-two picture{
+           display: flex;
+           justify-content: flex-start;
+           align-items: baseline;
        }
 
 
@@ -418,8 +425,42 @@
            padding:0;
        }
 
-    /*END CODERS*/
+    #coders picture img{
+        width:35%;
+    }
 
+    #coders-one .dark-button{
+        position: relative;
+        top: 7em;
+
+
+    }
+
+    #coders-one .deco-sign{
+        border:solid 2px white;
+        align-self: flex-start;
+        margin-bottom:3.5em;
+    }
+
+    #coders picture::before{
+        content: '';
+        border-top: solid 20px white;
+        border-left: solid 20px white;
+        position: relative;
+        padding: 9px 18px;
+        top: 2em;
+        left: -1em;
+        border-radius: 2px;
+        z-index: 4444444444;
+        width: 11px;
+        height: 5px;
+        display: block
+    }
+
+    /*END CODERS*/
+    .thumbnail{
+        border-bottom: solid 5px #ffc53e;
+    }
 
 
     /* END GENERAL */
@@ -510,10 +551,7 @@
         align-items: center;
         text-align: center;
         font-size: 1.2em;
-
     }
-
-
 
     .banner-content p{
         max-width:30em;
@@ -531,13 +569,12 @@
         border-color:   #ffc53e;
         text-transform: uppercase;
         font-size: .8em;
-         min-height:30px;
+         height:45px;
          border-bottom-style: solid;
          border-right-style: solid;
          display: flex;
          align-self: center;
          justify-content: center;
-
      }
 
     input[type="button"]:hover{
@@ -589,6 +626,7 @@
     }
 
 
+
     /* END BANNER */
 
     /*FOOTER */
@@ -608,20 +646,19 @@
         color: #929292;
         font-size: 1em;
         padding: .2em 0;
-
-
     }
 
     footer li a{
         list-style: none;
         text-decoration: none;
         color: #929292;
-
     }
+
     footer > * {
         display:flex;
         margin: 0 auto;
     }
+
     #left-footer{
         display:flex;
         flex:1;
@@ -669,7 +706,6 @@
         padding-bottom:3em;
         justify-content: space-evenly;
         border-bottom: solid 1px gray;
-
     }
 
     /* FOOTER TWO*/
@@ -689,7 +725,6 @@
         font-size:0.9em;
         text-transform:uppercase;
         padding: .7em 0;
-
     }
 
     #footer-two .logo{
@@ -741,8 +776,6 @@
     .search-bar{
         width: 100%;
         background-color: white;
-
-
     }
 
     .search-bar input[type="text"]{
@@ -757,7 +790,6 @@
         margin: 0 auto;
         max-width: 1280px;
         justify-content: space-between;
-
     }
     /*end searchbar*/
 
@@ -814,28 +846,23 @@
         margin: 0 auto;
         color:black;
         align-items: center;
-
     }
     .section{
         display: flex;
         flex-direction: column;
         text-align: center;
+        margin-top:3em;
+        margin-bottom:1em;
     }
     .deco-sign{
         border: solid 2px #f8bd32;
         width: 3em;
-        margin-top: 2em;
         margin-bottom: 2em;
         display:flex;
         align-self: center;
     }
 
-   #coders picture img{
-        width: 30em;
-        position: relative;
-        top: 100px;
 
-    }
 
     .yellow-card{
         background-color: #ffc53e;
@@ -861,18 +888,7 @@
         width: 7em;
     }
 
-    #coders-one .dark-button{
-        position: relative;
-        top: 7em;
 
-
-    }
-
-    #coders-one .deco-sign{
-        border:solid 2px white;
-        align-self: flex-start;
-        margin-bottom:3.5em;
-    }
 
     .col{
         flex:1;
@@ -885,8 +901,6 @@
         margin-bottom: 3em;
         flex-wrap: wrap;
         justify-content: center;
-
-
     }
 
     .counter{
@@ -912,17 +926,7 @@
     }
 
 
-    #coders picture::before{
-        content: '';
-        border-top: solid 20px white;
-        border-left: solid 20px white;
-        position: relative;
-        padding: 9px 18px;
-        top: 9em;
-        left: -14em;
-        border-radius: 2px;
-        z-index: 4;
-    }
+
 
     .column-icon{
         font-size: 2em;
@@ -960,7 +964,6 @@
         .search-bar {
 
             width: 90%;
-
         }
 
         #small-nav{
@@ -1080,7 +1083,7 @@
             max-width:300px;
         }
 
-        .freelancers-swiper-button-next,
+
         .swiper-button-next{
             left: -11px !important;
         }
