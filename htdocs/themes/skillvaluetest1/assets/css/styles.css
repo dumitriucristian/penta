@@ -21,15 +21,15 @@
     }
 
     a{
-        color:#ffc53e;
+        color:#ffcc33;
         text-decoration: none;
     }
 
     h1{
-        margin: 1em;
+        margin: 0.65em;
         padding: 0 1em;
         max-width: 15em;
-        font-size:2.8em;
+        font-size: 2.2em;
     }
 
     h2{
@@ -74,9 +74,9 @@
     }
 
     .two-colors{
-        background: linear-gradient(to bottom, #ffc53e 60%, #eaeaea 20%);
-        padding-top: 5em;
-        padding-bottom: 5em;
+        background: linear-gradient(to bottom, #ffcc33 70%, #eaeaea 20%);
+        padding-top: 6em;
+        padding-bottom: 6em;
     }
 
     select{
@@ -113,14 +113,15 @@
         background-color: black;
         width: 100%;
         font-size: 0.87em;
+        height:30px;
 
     }
 
     #small-nav p{
-        padding-left: 17%;
+        padding-left: 21%;
         text-transform: uppercase;
-        color: #ffc53e;
-        font-size: 0.8em;
+        color: #ffcc33;
+        font-size: 0.9em;
     }
 
     #search-quiz{
@@ -138,7 +139,7 @@
         height: auto;
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
-        border-bottom: 5px solid #ffc53e;
+        border-bottom: 5px solid #ffcc33;
     }
 
     .cards{
@@ -174,7 +175,7 @@
     }
 
     h4.quiz{
-        color: #ffc53e;
+        color: #ffcc33;
         text-transform: uppercase;
         font-size: 1em;
         font-weight: bolder;
@@ -222,7 +223,7 @@
         position: relative;
         left: -85px;
         top: -3px;
-        background-color: #ffc53e;
+        background-color: #ffcc33;
         border-radius: 4px 4px 0px 0px;
         font-size: 0.8em;
         padding: 1px 8px;
@@ -235,7 +236,7 @@
         height:160px;
     }
     a.yellow-action{
-        background-color: #ffc53e;
+        background-color: #ffcc33;
         color: black;
         width: 100%;
         padding: 10px 0;
@@ -254,7 +255,7 @@
         height:100%;
     }
     .quality picture{
-        background-color: #ffc53e;
+        background-color: #ffcc33;
         padding: 1em;
         border-radius: 100%;
         display: flex;
@@ -284,7 +285,7 @@
     }
     .quality .title{
         font-weight: bold;
-        color: #ffc53e;
+        color: #ffcc33;
         margin-top: 70px;
     }
 
@@ -336,7 +337,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        background-color: #ffc53e;
+        background-color: #ffcc33;
         margin-bottom: 10em;
         margin-top: 5em;
     }
@@ -355,14 +356,14 @@
 
     ul.personal-info li i{
         padding: 4px 6px;
-        color: #ffc53e;
+        color: #ffcc33;
         width: 18px;
     }
 
 
     .swiper-button-next,
     .swiper-button-prev{
-        background-color: #ffc53e;
+        background-color: #ffcc33;
         height: 3px !important;
         padding: 12px 14px 12px 0px !important;
         color: white !important;
@@ -410,7 +411,7 @@
            display: flex;
            margin-bottom: 5em;
            margin-top: 5em;
-           max-width: 1280px;
+           max-width: 1110px;
            margin: 0 auto;
            align-items: flex-start;
            flex-wrap: wrap;
@@ -442,7 +443,7 @@
        }
 
     #coders picture img{
-        width:70%;
+        width:65%;
     }
 
     #coders-one .dark-button{
@@ -453,29 +454,31 @@
     }
 
     #coders-one .deco-sign{
-        border:solid 3px white;
+        border: solid 4px white;
         align-self: flex-start;
-        margin-bottom:3.5em;
+        margin-bottom: 3.5em;
+        width: 83px;
+        border-radius: 5px;
     }
 
     #coders picture::before{
         content: '';
-        border-top: solid 30px white;
-        border-left: solid 30px white;
+        border-top: solid 45px white;
+        border-left: solid 45px white;
         position: relative;
-        padding: 18px 18px;
-        top: -20em;
-        left: 79px;
-        border-radius: 2px;
-        z-index: 4444444444;
-        width: 27px;
-        height: 27px;
+        padding: 12px 18px;
+        top: -13em;
+        left: 94px;
+        border-radius: 4px;
+        z-index: 4;
+        width: 40px;
+        height: 40px;
         display: block;
     }
 
     /*END CODERS*/
     .thumbnail{
-        border-bottom: solid 5px #ffc53e;
+        border-bottom: solid 5px #ffcc33;
     }
 
 
@@ -486,7 +489,7 @@
     /* HEADER */
     header{
         width: 100%;
-        max-width: 1280px;
+        max-width: 1110px;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -517,18 +520,18 @@
     }
 
     #left-nav ul li a{
-        padding: 25px;
-        padding-top: 39px;
-        color:white;
-        text-decoration:none;
+        padding: 50px 0px;
+        margin-left: 19px;
+        color: white;
+        text-decoration: none;
         text-transform: uppercase;
-        font-weight:bold;
-        min-width:50px;
-        font-size: 0.87em;
+        font-weight: bold;
+        min-width: 40px;
+        font-size: 0.9em;
     }
 
     #right-nav{
-        color:#ffc53e;
+        color:#ffcc33;
         display:flex;
         margin-left:auto;
         flex:1;
@@ -540,7 +543,7 @@
     }
 
     #left-nav  nav ul li a:hover{
-        border-top: solid 4px #ffc53e;
+        border-top: solid 4px #ffcc33;
     }
 
     #left-nav ul{
@@ -581,8 +584,8 @@
         border-radius: 4px;
         color: black;
         font-weight: bold;
-        background-color: #ffc53e;
-        border-color:   #ffc53e;
+        background-color: #ffcc33;
+        border-color:   #ffcc33;
         text-transform: uppercase;
         font-size: 1em;
          height:50px;
@@ -595,13 +598,13 @@
 
     input[type="button"]:hover{
         background-color: black;
-        color: #ffc53e;
+        color: #ffcc33;
         border: 1px solid;
     }
 
     input[type="button"].transparent{
         background-color: transparent;
-        color: #ffc53e;
+        color: #ffcc33;
         padding: 0.8em 4em;
     }
 
@@ -656,11 +659,11 @@
     footer{
         background-color: #171414;
         color: white;
-        border-top: solid 4px #ffc53e;
+        border-top: solid 4px #ffcc33;
     }
 
     footer a{
-        color: #ffc53e;
+        color: #ffcc33;
         text-decoration: none;
     }
 
@@ -682,6 +685,11 @@
         margin: 0 auto;
     }
 
+    #logo{
+        padding:20px 0;
+    }
+
+
     #left-footer{
         display:flex;
         flex:1;
@@ -691,7 +699,7 @@
     #right-footer{
         display:flex;
         flex:1;
-        color: #ffc53e;
+        color: #ffcc33;
 
     }
     .col-right{
@@ -709,6 +717,7 @@
 
     #footer-one h2{
         color:white;
+        font-size: 2em;
     }
 
     #footer-one p{
@@ -720,7 +729,7 @@
     }
 
     #footer-one, #footer-two{
-        max-width: 1280px;
+        max-width: 1110px;
     }
 
     /* FOOTER ONE*/
@@ -747,7 +756,7 @@
     #footer-two h4{
         font-size:0.9em;
         text-transform:uppercase;
-        padding: .7em 0;
+        padding: 0 0px 10px 0;
     }
 
     #footer-two .logo{
@@ -758,7 +767,10 @@
     #footer-two .col-left, #footer-two .col-right{
         display:flex;
         justify-content: space-between;
-        align-items:baseline;
+        align-items: flex-start;
+    }
+    #about-us{
+        margin-top: 40px;
     }
 
     /* FOOTER THREE*/
@@ -793,7 +805,7 @@
         padding: .1em .8em;
         font-size: 2em;
         color: black;
-        background-color: #ffc53e;
+        background-color: #ffcc33;
     }
     /*searchbar*/
     .search-bar{
@@ -806,13 +818,13 @@
         width: 100%;
         background-color: white;
         border: none;
-        padding: 0 4em;
+        padding: 0 2em;
     }
     #search-container{
         display: flex;
-        max-width: 1280px;
+        max-width: 1110px;
         margin: 0 auto;
-        max-width: 1280px;
+        max-width: 1110px;
         justify-content: space-between;
         height:100%;
     }
@@ -825,7 +837,7 @@
         margin: 5px;
         text-align: center;
         width: 21px;
-        background-color:#ffc53e;
+        background-color:#ffcc33;
         padding: .4em;
         color:black;
     }
@@ -838,7 +850,7 @@
     }
 
    ul.contact li .fas, ul.contact li .far{
-       color: #ffc53e;
+       color: #ffcc33;
        font-size: 1.2em;
        padding: .2em .5em;
    }
@@ -866,7 +878,7 @@
         color: black;
         flex: 1;
         width: 100%;
-        max-width: 1280px;
+        max-width: 1110px;
         min-height: 150px;
         margin: 0 auto;
         color:black;
@@ -876,21 +888,22 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-top:3em;
+        margin-top:1em;
         margin-bottom:1em;
     }
     .deco-sign{
-        border: solid 3px #f8bd32;
-        width: 6em;
+        border: solid 4px #f8bd32;
+        width: 83px;
         margin-bottom: 2em;
-        display:flex;
+        display: flex;
         align-self: center;
+        border-radius: 5px;
     }
 
 
 
     .yellow-card{
-        background-color: #ffc53e;
+        background-color: #ffcc33;
         align-items: center;
         justify-content: center;
     }
@@ -905,9 +918,9 @@
     .dark-button{
         color: white;
         text-decoration: none;
-        padding: 1em 3.5em;
+        padding: 1em 4.5em;
         background-color: black;
-        border-radius: 2px;
+        border-radius: 4px;
         font-size: 0.8em;
         font-weight: bold;
         width: 7em;
@@ -921,7 +934,7 @@
 
     .counters{
         display: flex;
-        max-width: 1280px;
+        max-width: 1110px;
         margin-top: 3em;
         margin-bottom: 3em;
         flex-wrap: wrap;
@@ -936,7 +949,7 @@
     }
     .counter h3{
         font-size: 1.8em;
-        color: #ffc53e;
+        color: #ffcc33;
     }
     .counter p{
         text-align: justify;
@@ -944,7 +957,7 @@
 
     .counter i{
         color: black;
-        background-color: #ffc53e;
+        background-color: #ffcc33;
         padding: 25px;
         border: solid 3px white;
         border-radius: 50%;
@@ -957,7 +970,7 @@
 
     .column-icon{
         font-size: 2em;
-        background-color: #ffc53e;
+        background-color: #ffcc33;
         border-radius: 100%;
         padding: 14px;
         border: solid 3px white;
