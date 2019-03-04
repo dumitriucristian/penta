@@ -1,0 +1,11 @@
+plugin:
+    name: 'webdev.skillvalue::lang.plugin.name'
+    description: 'webdev.skillvalue::lang.plugin.description'
+    author: WebDev
+    icon: oc-icon-connectdevelop
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Freelancers
+        url: webdev/skillvalue/freelancers
+        icon: icon-briefcase

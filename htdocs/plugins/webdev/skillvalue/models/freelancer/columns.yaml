@@ -1,0 +1,5 @@
+columns:
+    name:
+        label: 'Freelancer Name'
+        type: text
+        searchable: true

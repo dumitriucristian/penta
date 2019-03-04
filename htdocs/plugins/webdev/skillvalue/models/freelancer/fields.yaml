@@ -1,0 +1,7 @@
+fields:
+    name:
+        label: 'Freelancer name'
+        span: auto
+        placeholder: 'Freelancer name here'
+        required: 1
+        type: text

@@ -635,7 +635,6 @@ is_hidden = 0
 
 
 <! -- FOOTER BLOCK -->
-
     <footer>
         <div id="footer-one">
             <div class="col-left">
@@ -658,8 +657,10 @@ is_hidden = 0
         <div id="footer-two">
             <div class="col-left">
                 <div class="col">
-                    <div class="logo">Skillvalue</div>
-                    <h4>More About US    <a href="#"> Here</a>!</h4>
+                    <picture>
+                        <img src="{{  'assets/images/skillvalue-logo.png'|theme }}"  />
+                    </picture>
+                    <h4 id="about-us">More About US    <a href="#"> Here</a>!</h4>
                 </div>
                 <div class="col">
                     <h4>Our Main Services</h4>
@@ -696,17 +697,6 @@ is_hidden = 0
                         <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-
-
-        <div id="footer-three">
-            <div id="left-footer"><p>@Copyright 2019 SkillValue. All rights reserved</p></div>
-            <div id="right-footer">
-                 <a href=""> General terms and conditions</a>
-                 <a href=""> Legal statement </a>
-                 <a href=""> Privacy policy </a>
-                 <a href=""> Cookies Charter</a>
             </div>
         </div>
     </footer>

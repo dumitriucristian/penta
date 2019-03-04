@@ -1,0 +1,10 @@
+name: Freelancers
+form: $/webdev/skillvalue/models/freelancer/fields.yaml
+modelClass: Webdev\Skillvalue\Models\Freelancer
+defaultRedirect: webdev/skillvalue/freelancers
+create:
+    redirect: 'webdev/skillvalue/freelancers/update/:id'
+    redirectClose: webdev/skillvalue/freelancers
+update:
+    redirect: webdev/skillvalue/freelancers
+    redirectClose: webdev/skillvalue/freelancers
